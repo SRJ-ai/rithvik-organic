@@ -359,7 +359,7 @@ ul {
 
 .story-text-column {
   flex: 1;
-  padding: 100px 0 200px 0;
+  padding: 100px 0 200px 40px;
 }
 
 .story-step {
@@ -1518,6 +1518,10 @@ body.rtl .lang-switcher {
     height: 40vh;
     margin-top: -100px;
     margin-bottom: 50px;
+  }
+  
+  .story-text-column {
+    padding: 20px 0 50px 0;
   }
   
   .story-step {
