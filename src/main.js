@@ -154,39 +154,46 @@ document.addEventListener('DOMContentLoaded', () => {
   if (storySteps.length > 0 && storyImage) {
     const imgSources = ['./hero_bg.png', './millets_showcase.png', './seeds_superfoods.png'];
 
-    // Use GSAP to handle step opacity and image changing synced with the pin
-    storySteps.forEach((step, index) => {
-      ScrollTrigger.create({
-        trigger: step,
-        start: "top center",
-        end: "bottom center",
-        onEnter: () => {
-          storySteps.forEach(s => s.classList.remove('active'));
-          step.classList.add('active');
-          if(storyImage.getAttribute('src') !== imgSources[index]) {
-            storyImage.style.opacity = 0;
-            setTimeout(() => {
-              storyImage.src = imgSources[index] || imgSources[0];
-              storyImage.style.opacity = 1;
-            }, 300);
-          }
-        },
-        onEnterBack: () => {
-          storySteps.forEach(s => s.classList.remove('active'));
-          step.classList.add('active');
-          if(storyImage.getAttribute('src') !== imgSources[index]) {
-            storyImage.style.opacity = 0;
-            setTimeout(() => {
-              storyImage.src = imgSources[index] || imgSources[0];
-              storyImage.style.opacity = 1;
-            }, 300);
-          }
-        }
-      });
+    ScrollTrigger.matchMedia({
+      "(min-width: 993px)": function() {
+        // Use GSAP to handle step opacity and image changing synced with the pin
+        storySteps.forEach((step, index) => {
+          ScrollTrigger.create({
+            trigger: step,
+            start: "top center",
+            end: "bottom center",
+            onEnter: () => {
+              storySteps.forEach(s => s.classList.remove('active'));
+              step.classList.add('active');
+              if(storyImage.getAttribute('src') !== imgSources[index]) {
+                storyImage.style.opacity = 0;
+                setTimeout(() => {
+                  storyImage.src = imgSources[index] || imgSources[0];
+                  storyImage.style.opacity = 1;
+                }, 300);
+              }
+            },
+            onEnterBack: () => {
+              storySteps.forEach(s => s.classList.remove('active'));
+              step.classList.add('active');
+              if(storyImage.getAttribute('src') !== imgSources[index]) {
+                storyImage.style.opacity = 0;
+                setTimeout(() => {
+                  storyImage.src = imgSources[index] || imgSources[0];
+                  storyImage.style.opacity = 1;
+                }, 300);
+              }
+            }
+          });
+        });
+        
+        // Default active for first step
+        if(storySteps[0]) storySteps[0].classList.add('active');
+      },
+      "(max-width: 992px)": function() {
+        storySteps.forEach(s => s.classList.add('active'));
+      }
     });
-    
-    // Default active for first step
-    if(storySteps[0]) storySteps[0].classList.add('active');
   }
 
   // Particle generation for Hero

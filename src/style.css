@@ -1505,6 +1505,12 @@ body.rtl .lang-switcher {
 
 /* Responsive */
 @media (max-width: 992px) {
+  body, a, button, input, select, textarea, .map-node-gsap, .btn {
+    cursor: auto !important;
+  }
+  .cursor, .cursor-follower, .custom-cursor {
+    display: none !important;
+  }
   .hero-title {
     font-size: 3.5rem;
   }
