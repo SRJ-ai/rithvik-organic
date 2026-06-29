@@ -1498,13 +1498,14 @@ body.rtl .lang-switcher {
 }
 .horizontal-scroll-track {
   display: flex;
-  width: 300vw; /* 3 panels * 100vw */
+  width: max-content;
   height: calc(100vh - 180px);
 }
 .horizontal-panel {
   width: 100vw;
   height: 100%;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   padding: 0 5%;
