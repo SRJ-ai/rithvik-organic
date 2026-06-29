@@ -1522,8 +1522,8 @@ body.rtl .lang-switcher {
     position: relative;
     top: 0;
     height: 40vh;
-    margin-top: -100px;
-    margin-bottom: 50px;
+    margin-top: 0;
+    margin-bottom: 30px;
   }
   
   .story-text-column {
@@ -1546,7 +1546,19 @@ body.rtl .lang-switcher {
 
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px;
+  }
+  .hero-buttons .btn {
+    width: 100%;
   }
   .nav-content {
     flex-direction: column;
@@ -1554,16 +1566,20 @@ body.rtl .lang-switcher {
     padding: 15px 0;
   }
   .nav-links {
-    gap: 15px;
-    font-size: 0.9rem;
+    gap: 12px;
+    font-size: 0.85rem;
     flex-wrap: wrap;
     justify-content: center;
   }
   .category-content {
-    padding: 30px 20px;
+    padding: 25px 15px;
+  }
+  .category-content h3 {
+    font-size: 1.6rem;
   }
   .product-list {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
   .section {
     padding: 60px 0;
