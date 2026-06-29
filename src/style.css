@@ -1542,8 +1542,22 @@ body.rtl .lang-switcher {
   .hero-title {
     font-size: 2.5rem;
   }
+  .nav-content {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 0;
+  }
   .nav-links {
-    display: none;
+    gap: 15px;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .category-content {
+    padding: 30px 20px;
+  }
+  .product-list {
+    grid-template-columns: 1fr;
   }
   .section {
     padding: 60px 0;
