@@ -1499,15 +1499,16 @@ body.rtl .lang-switcher {
 .horizontal-scroll-track {
   display: flex;
   width: 300vw; /* 3 panels * 100vw */
-  height: 100vh;
+  height: calc(100vh - 180px);
 }
 .horizontal-panel {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 5%;
+  overflow-y: auto;
 }
 .table-panel {
   flex-direction: column !important;
