@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rithwik Industries - Premium Agricultural Products</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Custom Fluid Cursor -->
+    <div class="custom-cursor"></div>
+    
+    <!-- Cinematic Preloader -->
+    <div id="preloader">
+      <div class="preloader-content">
+        <img src="/rithwik_logo.png" alt="Rithwik Industries Loading" class="preloader-logo">
+      </div>
+    </div>
+    
+    <!-- Section Transition Curtain -->
+    <div class="transition-curtain"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+      <div class="container nav-content">
+        <a href="#" class="logo">
+          <img src="/rithwik_logo.png" alt="Rithwik Industries Logo" class="nav-logo-img">
+          <span>Rithwik Industries</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home" data-i18n="nav_home">Home</a></li>
+          <li><a href="#about" data-i18n="nav_about">About</a></li>
+          <li><a href="#why-us" data-i18n="nav_why_us">Why Us</a></li>
+          <li><a href="#products" data-i18n="nav_products">Products</a></li>
+          <li><a href="#enquiry" data-i18n="nav_enquire">Enquire Now</a></li>
+        </ul>
+        <div class="lang-switcher">
+          <select id="lang-select" class="lang-select glass-effect">
+            <option value="en">EN</option>
+            <option value="jp">日本語</option>
+            <option value="ar">العربية</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+      <!-- Cinematic Video Background (Drop hero_video.mp4 in public folder) -->
+      <video class="hero-bg-video" autoplay loop muted playsinline poster="/hero_bg.png">
+        <source src="/hero_video.mp4" type="video/mp4">
+      </video>
+      <div class="hero-particles" id="particles"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span> Since 2010 &bull; Govt. Recognized Export House
+        </div>
+        <h1 class="hero-title">
+          <div class="gsap-hero-line">Nature's Grain,</div>
+          <div class="gsap-hero-line text-gold">Nurtured for You</div>
+        </h1>
+        <p class="hero-subtitle gsap-hero-line">Premium Millets, Superfoods & Spices Exported Globally from Indian Farmlands to the World.</p>
+        <div class="gsap-hero-line mt-4">
+          <a href="#products" class="btn btn-primary btn-glow" style="padding: 18px 45px; font-size: 1.1rem;">Explore Our Exports</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse"></div>
+        <p>Scroll</p>
+      </div>
+    </header>
+
+    <!-- Live Shipments Ticker -->
+    <div class="shipment-ticker-wrapper">
+      <div class="shipment-ticker">
+        <span>🟢 Recent Shipment: 200MT Premium Millets to Tokyo, Japan</span>
+        <span>🟢 Quality Control: 99.99% Sortex Cleaned Batch Approved</span>
+        <span>🟢 En Route: Container dispatch to Dubai, UAE</span>
+        <span>🟢 Recent Shipment: 50MT Superfoods to London, UK</span>
+        <span>🟢 Recent Shipment: 200MT Premium Millets to Tokyo, Japan</span>
+        <span>🟢 Quality Control: 99.99% Sortex Cleaned Batch Approved</span>
+      </div>
+    </div>
+
+    <!-- Farm to Export Story Section -->
+    <section class="section story-section" id="about">
+      <div class="story-container">
+        <!-- Visual Column on the Left -->
+        <div class="story-visual-column">
+          <div class="sticky-visual glass-effect-heavy">
+            <!-- This image changes via JS based on scroll -->
+            <img src="/hero_bg.png" alt="Farm to Export Visual" id="story-image">
+            <div class="visual-overlay"></div>
+          </div>
+        </div>
+        
+        <!-- Text Column on the Right -->
+        <div class="story-text-column" style="padding-left: 40px;">
+          <div class="story-step" id="step-1">
+            <h2 class="section-title">Sustainable Sourcing</h2>
+            <p>Through partnerships with Indian farmers, we promote sustainable practices to source the finest millets, spices, and superfoods directly from nature.</p>
+          </div>
+          <div class="story-step" id="step-2">
+            <h2 class="section-title">Advanced Processing</h2>
+            <p>Our expansive 25,000 sq ft manufacturing facility near Bangalore uses cutting-edge technology, achieving an impressive 99.99% cleanliness level.</p>
+          </div>
+          <div class="story-step" id="step-3">
+            <h2 class="section-title">Global Export</h2>
+            <p>As a government-recognized Star Export House, we ensure timely delivery of 100% natural, premium products to international markets.</p>
+            <div class="gst-box mt-5">
+              <strong>GSTIN:</strong> 37ABKFR7391G1ZM
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Reach Map -->
+    <section class="section global-reach" id="global-reach">
+      <div class="container fade-in-scroll">
+        <div class="map-container custom-map-container" style="position: relative; width: 100%; max-width: 1200px; margin: 0 auto; overflow: hidden; border-radius: 20px; aspect-ratio: 16/9; background: #0a0a0a;">
+          <svg viewBox="0 0 1600 900" class="gsap-world-map" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block;">
+            <!-- Embed image directly in SVG for perfect coordinate alignment across all screen sizes -->
+            <image href="/world_map_bg.png" x="0" y="0" width="1600" height="900" preserveAspectRatio="xMidYMid slice" style="opacity: 0.8; filter: contrast(1.1) brightness(0.8);" />
+            
+            <!-- Trade Routes (will be drawn by GSAP) -->
+            <!-- Kurnool (India) to Japan -->
+            <path class="gsap-route" d="M1110,465 Q1250,300 1350,300" fill="none" stroke="rgba(212,175,55,1)" stroke-width="3" />
+            <!-- Kurnool to UAE -->
+            <path class="gsap-route" d="M1110,465 Q1075,350 1000,400" fill="none" stroke="rgba(212,175,55,1)" stroke-width="3" />
+            <!-- Kurnool to UK -->
+            <path class="gsap-route" d="M1110,465 Q950,200 750,250" fill="none" stroke="rgba(212,175,55,1)" stroke-width="3" />
+            <!-- Kurnool to USA -->
+            <path class="gsap-route" d="M1110,465 Q800,200 450,300" fill="none" stroke="rgba(212,175,55,1)" stroke-width="3" />
+            <!-- Kurnool to AUS -->
+            <path class="gsap-route" d="M1110,465 Q1250,600 1350,700" fill="none" stroke="rgba(212,175,55,1)" stroke-width="3" />
+            
+            <!-- Nodes -->
+            <!-- Kurnool (India) -->
+            <g class="map-node-gsap kurnool-hub-wrapper" transform="translate(1110, 465)">
+              <g class="kurnool-hub" style="opacity: 0;">
+                <circle cx="0" cy="0" r="12" fill="var(--color-secondary)" />
+                <circle cx="0" cy="0" r="30" class="pulse-ring" fill="none" stroke="var(--color-secondary)" stroke-width="3" />
+                <!-- Background pill for text readability -->
+                <rect x="25" y="-35" width="230" height="60" rx="10" fill="rgba(17, 24, 19, 0.9)" stroke="rgba(212,175,55,0.6)" stroke-width="1.5" />
+                <text x="40" y="-12" fill="#fff" font-size="20" font-weight="bold" font-family="var(--font-heading)">Kurnool, India</text>
+                <text x="40" y="12" fill="var(--color-secondary)" font-size="14" font-family="var(--font-body)">Global Operations Hub</text>
+              </g>
+            </g>
+            <!-- Japan -->
+            <g class="map-node-gsap dest-node" data-card="card-jp" transform="translate(1350, 300)">
+              <circle cx="0" cy="0" r="6" fill="var(--color-secondary)" />
+            </g>
+            <!-- UAE -->
+            <g class="map-node-gsap dest-node" data-card="card-uae" transform="translate(1000, 400)">
+              <circle cx="0" cy="0" r="6" fill="var(--color-secondary)" />
+            </g>
+            <!-- UK -->
+            <g class="map-node-gsap dest-node" data-card="card-uk" transform="translate(750, 250)">
+              <circle cx="0" cy="0" r="6" fill="var(--color-secondary)" />
+            </g>
+            <!-- USA -->
+            <g class="map-node-gsap dest-node" data-card="card-usa" transform="translate(450, 300)">
+              <circle cx="0" cy="0" r="6" fill="var(--color-secondary)" />
+            </g>
+            <!-- AUS -->
+            <g class="map-node-gsap dest-node" data-card="card-aus" transform="translate(1350, 700)">
+              <circle cx="0" cy="0" r="6" fill="var(--color-secondary)" />
+            </g>
+          </svg>
+          
+          <!-- Floating Hover Cards -->
+          <div class="map-hover-card glass-effect" id="card-jp" style="top: 15%; left: 75%;">
+            <h4>Tokyo, Japan</h4>
+            <p>Premium Millets<br/>Quality: Sortex 99.99%</p>
+          </div>
+          <div class="map-hover-card glass-effect" id="card-uae" style="top: 50%; left: 50%;">
+            <h4>Dubai, UAE</h4>
+            <p>Spices & Superfoods<br/>Container Dispatch</p>
+          </div>
+          <div class="map-hover-card glass-effect" id="card-uk" style="top: 15%; left: 40%;">
+            <h4>London, UK</h4>
+            <p>100% Organic Millets<br/>BRC Certified</p>
+          </div>
+          <div class="map-hover-card glass-effect" id="card-usa" style="top: 40%; left: 5%;">
+            <h4>New York, USA</h4>
+            <p>Superseeds (Chia/Quinoa)<br/>USFDA Approved</p>
+          </div>
+          <div class="map-hover-card glass-effect" id="card-aus" style="top: 80%; left: 75%;">
+            <h4>Sydney, Australia</h4>
+            <p>Bulk PP Bags<br/>Star Export House</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us & Certifications -->
+    <section class="section why-us-section" id="why-us">
+      <div class="container fade-in-scroll">
+        <h2 class="section-title text-center">Why Choose Rithwik Industries</h2>
+        <p class="section-subtitle text-center">We strive for excellence and positive industry impact through quality and reliability.</p>
+        
+        <div class="features-grid">
+          <div class="feature-card glass-effect">
+            <div class="feature-icon">★</div>
+            <h3>Star Export House</h3>
+            <p>Being a government-recognized star export house, clients can trust our credibility and excellence in export operations.</p>
+          </div>
+          <div class="feature-card glass-effect">
+            <div class="feature-icon">🏅</div>
+            <h3>Superior Quality</h3>
+            <p>Our products consistently meet and exceed international standards, ensuring that clients receive high-quality products that meet their expectations.</p>
+          </div>
+          <div class="feature-card glass-effect">
+            <div class="feature-icon">⏱</div>
+            <h3>Timely Delivery</h3>
+            <p>We prioritize prompt and timely delivery, ensuring that orders reach clients on time without compromising freshness.</p>
+          </div>
+          <div class="feature-card glass-effect">
+            <div class="feature-icon">🛡</div>
+            <h3>Quality Assurance</h3>
+            <p>We guarantee high-quality products that meet international standards, ensuring customer satisfaction and peace of mind.</p>
+          </div>
+          <div class="feature-card glass-effect">
+            <div class="feature-icon">💰</div>
+            <h3>Competitive Pricing</h3>
+            <p>Our competitive rates provide excellent value for money, making us an attractive choice for clients worldwide.</p>
+          </div>
+          <div class="feature-card glass-effect">
+            <div class="feature-icon">🌍</div>
+            <h3>Global Reach</h3>
+            <p>Expanding our footprint across continents to bring premium quality agricultural products to international markets.</p>
+          </div>
+        </div>
+
+        <div class="certifications-banner fade-in-scroll mt-5">
+          <h3>Our Certifications & Standards</h3>
+          <p>We are dedicated to quality control, evident through our numerous certifications that reflect our commitment to international food safety and quality regulations.</p>
+          <div class="cert-logos">
+            <div class="cert-logo-box">
+              <div class="gold-seal">BRC</div>
+              <span>Certified</span>
+            </div>
+            <div class="cert-logo-box">
+              <div class="gold-seal">USFDA</div>
+              <span>Registered</span>
+            </div>
+            <div class="cert-logo-box">
+              <div class="gold-seal">APEDA</div>
+              <span>Approved</span>
+            </div>
+            <div class="cert-logo-box">
+              <div class="gold-seal">100%</div>
+              <span>Organic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Millets & Superfoods Section -->
+    <section class="section products-section" id="products">
+      <div class="container">
+        <h2 class="section-title text-center">Our Line of Products</h2>
+        <p class="section-subtitle text-center">We offer a diverse range of products, including millets, superseeds, super foods, spices, and nuts.</p>
+        <div class="horizontal-scroll-container">
+          <div class="horizontal-scroll-track">
+            
+            <!-- Panel 1: Millets -->
+            <div class="horizontal-panel">
+              <div class="product-category">
+                <div class="category-image" style="background-image: url('/millets.png');"></div>
+                <div class="category-content">
+                  <h3>Premium Millets</h3>
+                  <p class="health-benefits">Millets are rich in fiber, antioxidants, and essential nutrients, making them a great choice for gluten-free diets.</p>
+                  <ul class="product-list">
+                    <li>Foxtail Millet</li>
+                    <li>Kodo Millet</li>
+                    <li>Proso Millet</li>
+                    <li>Browntop Millet</li>
+                    <li>Barnyard Millet</li>
+                    <li>Little Millet</li>
+                  </ul>
+                  <button class="btn btn-outline view-details-btn mt-5" data-product="millets">View Specifications</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel 2: Seeds -->
+            <div class="horizontal-panel">
+              <div class="product-category reverse">
+                <div class="category-image" style="background-image: url('/seeds.png');"></div>
+                <div class="category-content">
+                  <h3>Seeds & Super Foods</h3>
+                  <p class="health-benefits">Enhance your daily nutrition with our premium selection of super seeds, packed with omega-3s, protein, and essential minerals.</p>
+                  <ul class="product-list">
+                    <li>Pumpkin Seeds</li>
+                    <li>Sunflower Seeds</li>
+                    <li>Flax Seeds</li>
+                    <li>Safflower Seeds</li>
+                    <li>Sesame Seeds (White & Z-Black)</li>
+                    <li>Chia Seeds (White)</li>
+                    <li>Quinoa Seeds (White, Black, Red)</li>
+                    <li>Basil Seeds</li>
+                  </ul>
+                  <button class="btn btn-outline view-details-btn mt-5" data-product="superfoods">View Specifications</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel 3: Spices Table -->
+            <div class="horizontal-panel">
+              <div class="product-category table-panel">
+                <div class="category-content" style="width: 100%;">
+                  <h3>Spices & Pulses</h3>
+                  <div class="table-responsive glass-effect" style="margin-top: 20px;">
+                    <table class="product-table">
+                      <thead>
+                        <tr>
+                          <th>Product List</th>
+                          <th>GST</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Black Chai</td><td>5%</td></tr>
+                        <tr><td>Basil Seeds</td><td>5%</td></tr>
+                        <tr><td>Horse Gram (Raw)</td><td>0%</td></tr>
+                        <tr><td>Bay leaf</td><td>5%</td></tr>
+                        <tr><td>Buck Wheat</td><td>0%</td></tr>
+                        <tr><td>Clove (Madagascar)</td><td>5%</td></tr>
+                        <tr><td>Clove (Lalpari)</td><td>5%</td></tr>
+                        <tr><td>Toor Dal RAW</td><td>5%</td></tr>
+                        <tr><td>Chana Dal</td><td>5%</td></tr>
+                        <tr><td>Lobia</td><td>5%</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="text-center mt-5" style="margin-top: 30px;">
+                    <a href="/Rithwik_Catalog.pdf" download="Rithwik_Catalog.pdf" class="btn btn-primary btn-glow" style="display: inline-block;">Download Full PDF Catalog</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bird Feed Section -->
+    <section class="section bird-feed-section" id="bird-feed">
+      <div class="container fade-in-scroll">
+        <h2 class="section-title text-center">Rithwik Bird Feeds</h2>
+        <p class="section-subtitle text-center">Premium nutrition for birds, carefully sourced and processed.</p>
+        <div class="table-responsive glass-effect">
+          <table class="product-table">
+            <thead>
+              <tr>
+                <th>Product List</th>
+                <th>GST</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Foxtail Raw / Cleaned (Summer)</td><td>0%</td></tr>
+              <tr><td>Foxtail / Cleaned (Winter)</td><td>0%</td></tr>
+              <tr><td>Proso Raw / White Sortex</td><td>0%</td></tr>
+              <tr><td>Black Sunflower</td><td>5%</td></tr>
+              <tr><td>Imported SF-17</td><td>5%</td></tr>
+              <tr><td>Pearl / Bajra</td><td>5%</td></tr>
+              <tr><td>Jowar (nidi-ch5 / Milky / Mahendra)</td><td>0%</td></tr>
+              <tr><td>Safflower</td><td>5%</td></tr>
+              <tr><td>White Maize</td><td>0%</td></tr>
+              <tr><td>Ragi Finger Millet</td><td>0%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enquiry Section -->
+    <section class="section enquiry-section" id="enquiry">
+      <div class="container fade-in-scroll">
+        <div class="enquiry-container glass-effect-heavy">
+          <div class="enquiry-info slide-left">
+            <h2>Get in Touch</h2>
+            <p>Interested in bulk orders, exports, or have a general query? Fill out the form and our team will get back to you promptly.</p>
+            <div class="contact-highlights">
+              <div class="highlight-item">
+                <span class="icon">✉</span> rithwikindustries@gmail.com
+              </div>
+              <div class="highlight-item">
+                <span class="icon">☏</span> +91 8309782770
+              </div>
+            </div>
+          </div>
+          <div class="enquiry-form-wrapper slide-right">
+            <form id="enquiryForm" class="enquiry-form">
+              <div class="input-group">
+                <input type="text" id="name" required>
+                <label for="name" data-i18n="form_name">Full Name</label>
+                <span class="focus-border"></span>
+                <span class="validation-icon" id="icon-name"></span>
+              </div>
+              <div class="input-group">
+                <input type="email" id="email" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                <label for="email" data-i18n="form_email">Email Address</label>
+                <span class="focus-border"></span>
+                <span class="validation-icon" id="icon-email"></span>
+              </div>
+              <div class="input-group">
+                <select id="interest" required>
+                  <option value="" disabled selected></option>
+                  <option value="millets" data-i18n="opt_millets">Premium Millets</option>
+                  <option value="seeds" data-i18n="opt_seeds">Seeds & Superfoods</option>
+                  <option value="birdfeed" data-i18n="opt_birdfeed">Bird Feeds</option>
+                  <option value="other" data-i18n="opt_other">Other Spices/Dals</option>
+                </select>
+                <label for="interest" data-i18n="form_interest">Product of Interest</label>
+                <span class="focus-border"></span>
+              </div>
+              <div class="input-group">
+                <textarea id="message" rows="4" required></textarea>
+                <label for="message" data-i18n="form_msg">Your Message</label>
+                <span class="focus-border"></span>
+                <span class="validation-icon" id="icon-message"></span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-animate" id="submit-btn" style="position: relative;">
+                <span class="btn-text" data-i18n="form_submit">Send Enquiry</span>
+                <div class="hover-effect"></div>
+                <span class="btn-loader" style="display:none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">⏳</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h2>Rithwik Industries</h2>
+            <p>Nature's Grain, Nurtured for You</p>
+          </div>
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p><strong>Office:</strong> 87/1404, Near Nandyal Checkpost, Kurnool, Andhra Pradesh, 518002</p>
+            <p><strong>Warehouse:</strong> 2/161, 2/162, Sanjivareddypalle, Duvvur, YSR</p>
+            <p><strong>Email:</strong> <a href="mailto:rithwikindustries@gmail.com">rithwikindustries@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:8309782770">8309782770</a>, 8828282823, 7329999996</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Rithwik Industries. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contacts">
+      <a href="https://wa.me/918309782770" target="_blank" class="fab fab-whatsapp" title="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </a>
+      <a href="tel:8309782770" class="fab fab-phone" title="Call Us">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+      </a>
+    </div>
+
+    <!-- Product Details Modal -->
+    <div id="product-modal" class="modal-backdrop">
+      <div class="modal-content glass-effect-heavy">
+        <button class="modal-close" id="modal-close">&times;</button>
+        <div class="modal-body">
+          <h2 id="modal-title" class="section-title">Product Details</h2>
+          <div class="modal-grid">
+            <div class="modal-specs">
+              <h3 style="color:var(--color-secondary); margin-bottom: 15px;">Specifications</h3>
+              <ul id="modal-specs-list" class="modal-list"></ul>
+            </div>
+            <div class="modal-packaging">
+              <h3 style="color:var(--color-secondary); margin-bottom: 15px;">Available Packaging</h3>
+              <ul id="modal-packaging-list" class="modal-list"></ul>
+              <div class="mt-5" style="margin-top: 30px;">
+                <a href="#enquiry" class="btn btn-primary btn-glow" id="modal-quote-btn" onclick="document.getElementById('product-modal').classList.remove('active')">Request Bulk Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
