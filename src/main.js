@@ -126,22 +126,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // GSAP Horizontal Scroll Showcase
-  const horizontalTrack = document.querySelector('.horizontal-scroll-track');
-  const horizontalContainer = document.querySelector('.products-section');
-  if (horizontalTrack && horizontalContainer) {
-    const panels = gsap.utils.toArray('.horizontal-panel');
-    gsap.to(panels, {
-      xPercent: -100 * (panels.length - 1),
-      ease: "none",
-      ScrollTrigger: {
-        trigger: horizontalContainer,
-        pin: true,
-        scrub: 1,
-        end: () => "+=" + horizontalTrack.offsetWidth
-      }
-    });
-  }
 
   // Intersection Observer for scroll animations
   const observerOptions = {
