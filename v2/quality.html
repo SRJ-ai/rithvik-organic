@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html><html lang="en"><head>
+  <script type="module" src="/@vite/client"></script>
+
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Quality Assurance - Rithwik Industries</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#f1f1ec",
+                        "surface-dim": "#dadad5",
+                        "secondary": "#775a19",
+                        "tertiary-fixed": "#e4e2de",
+                        "surface-container-high": "#e8e8e3",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#785a1a",
+                        "primary-fixed": "#c8ebd0",
+                        "surface-bright": "#fafaf4",
+                        "surface-container": "#eeeee9",
+                        "on-tertiary-container": "#b3b2af",
+                        "inverse-surface": "#2f312e",
+                        "secondary-container": "#fed488",
+                        "error": "#ba1a1a",
+                        "tertiary": "#2e2f2c",
+                        "outline": "#727972",
+                        "surface-container-highest": "#e3e3de",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#474744",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "surface": "#fafaf4",
+                        "tertiary-fixed-dim": "#c8c6c3",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#2d4b37",
+                        "secondary-fixed-dim": "#e9c176",
+                        "tertiary-container": "#444542",
+                        "on-primary-container": "#99baa1",
+                        "background": "#fafaf4",
+                        "secondary-fixed": "#ffdea5",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#1b1c1a",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#424843",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e3e3de",
+                        "primary-fixed-dim": "#adcfb4",
+                        "on-primary-fixed": "#022110",
+                        "inverse-primary": "#adcfb4",
+                        "surface-tint": "#466550",
+                        "on-background": "#1a1c19",
+                        "on-surface": "#1a1c19",
+                        "surface-container-low": "#f4f4ee",
+                        "outline-variant": "#c2c8c0",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#2f4d39",
+                        "primary": "#163422",
+                        "on-secondary-fixed": "#261900"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "bento-gap": "24px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "body-md": [
+                            "Inter"
+                        ],
+                        "headline-lg-mobile": [
+                            "Playfair Display"
+                        ],
+                        "body-lg": [
+                            "Inter"
+                        ],
+                        "label-md": [
+                            "Inter"
+                        ],
+                        "headline-md": [
+                            "Playfair Display"
+                        ],
+                        "headline-lg": [
+                            "Playfair Display"
+                        ],
+                        "display-lg": [
+                            "Playfair Display"
+                        ]
+                    },
+                    "fontSize": {
+                        "body-md": [
+                            "16px",
+                            {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "headline-lg-mobile": [
+                            "32px",
+                            {
+                                "lineHeight": "40px",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "body-lg": [
+                            "18px",
+                            {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "label-md": [
+                            "14px",
+                            {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "headline-md": [
+                            "28px",
+                            {
+                                "lineHeight": "36px",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "headline-lg": [
+                            "40px",
+                            {
+                                "lineHeight": "48px",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "display-lg": [
+                            "64px",
+                            {
+                                "lineHeight": "72px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(253, 251, 247, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            box-shadow: 0 8px 30px rgba(45, 75, 55, 0.04);
+        }
+        .soft-shadow {
+            box-shadow: 0 10px 40px rgba(45, 75, 55, 0.05);
+        }
+    </style>
+<script type="module" src="/@id/virtual:stitch-nav"></script></head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-full mx-auto bg-background/80 dark:bg-background/80 backdrop-blur-md">
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-on-primary-container" href="#">Rithwik</a>
+<nav class="hidden md:flex space-x-gutter">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="index.html">Organic Superfoods</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="products.html">Premium Bird Feeds</a>
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim border-b-2 border-secondary dark:border-secondary-fixed-dim pb-1 hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="about.html">Our Heritage</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="quality.html">Sustainability</a>
+</nav>
+<div class="flex items-center space-x-unit">
+<button class="p-2 text-primary dark:text-primary-fixed-dim hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300 focus:opacity-80 focus:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+<button class="p-2 text-primary dark:text-primary-fixed-dim hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300 focus:opacity-80 focus:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</div>
+</header>
+<main class="flex-grow pt-[80px]">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-16 md:py-24 max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h1 class="font-display-lg text-display-lg text-primary mb-6">The Standard of Purity</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Every grain is tested against the world's most rigorous benchmarks to ensure uncompromised quality.</p>
+</div>
+<div class="relative w-full max-w-4xl mx-auto">
+<div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden soft-shadow relative">
+<img alt="A laboratory setting where a scientist in a green coat and gloves is meticulously examining grains of millet in a petri dish using tweezers, with a card reading 'Rithwik Earth &amp; Ethos' next to it, against a backdrop of microscopes and bright natural light pouring through a window, conveying modern scientific precision and organic purity." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxtYQtsigZiww7VL6t2sqhLCOayzZ0VLk6ocWry4c5GCD3pCUZlMQQ6BZAyf1Phc7r0OopvstLLbw_4z_NVPBG6yfpcm0Mrd4mmqVlCnNwCgD6ZExOCqlH-0qlV6GdTF38AsdFXW7AoUmBlObOmVIg9rX2Mgu6i6xqCRfKDZfEQoPJP94e-Y63UJcgnWNtiUqhYqJjhGsjWuK443NM4Pue2FFtLHr_tdsG2V9euanPFNji0E6dFyrrZLtEaMNmx1GD7ffc1NWW2u0">
+</div>
+<!-- Certification Badges -->
+<div class="absolute -left-6 top-1/4 transform -translate-y-1/2 flex flex-col gap-6">
+<div class="bg-surface rounded-full p-4 flex items-center justify-center soft-shadow border border-secondary/10 w-20 h-20 group hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:text-secondary transition-colors">verified</span>
+<span class="sr-only">ISO Certified</span>
+</div>
+<div class="bg-surface rounded-full p-4 flex items-center justify-center soft-shadow border border-secondary/10 w-20 h-20 group hover:scale-105 transition-transform ml-8">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:text-secondary transition-colors">assignment_turned_in</span>
+<span class="sr-only">HACCP Compliant</span>
+</div>
+</div>
+<div class="absolute -right-6 bottom-1/4 transform translate-y-1/2">
+<div class="bg-surface rounded-full p-4 flex items-center justify-center soft-shadow border border-secondary/10 w-20 h-20 group hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:text-secondary transition-colors">eco</span>
+<span class="sr-only">Certified Organic</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Quality Metrics Bento Grid -->
+<section class="px-margin-mobile md:px-margin-desktop py-16 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-12 text-center md:text-left">Our Quality Benchmarks</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-bento-gap">
+<!-- Card 1: Spans 7 cols -->
+<div class="col-span-1 md:col-span-7 glass-card rounded-xl p-8 flex flex-col justify-center">
+<div class="mb-4 inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined" data-weight="fill">filter_alt</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">99.9% Purity Level</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Multistage cleaning and sorting processes guarantee absolute grain integrity, removing impurities while preserving the natural wholesome goodness.</p>
+</div>
+<!-- Card 2: Spans 5 cols -->
+<div class="col-span-1 md:col-span-5 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-center relative overflow-hidden">
+<div class="absolute top-0 right-0 opacity-10 transform translate-x-1/3 -translate-y-1/3">
+<span class="material-symbols-outlined text-[12rem]">science</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md mb-4">Scientific Formulation</h3>
+<p class="font-body-md text-body-md text-on-primary/80">Lab-tested nutrient profiles for consistent health benefits across every batch. We measure what matters.</p>
+</div>
+</div>
+<!-- Card 3: Spans 5 cols -->
+<div class="col-span-1 md:col-span-5 glass-card rounded-xl p-8 flex flex-col justify-center">
+<div class="mb-4 inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 text-secondary">
+<span class="material-symbols-outlined" data-weight="fill">security</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Zero Contaminants</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Strict moisture control and microbial testing to ensure 100% safe consumption. Purely natural.</p>
+</div>
+<!-- Card 4: Spans 7 cols -->
+<div class="col-span-1 md:col-span-7 bg-surface rounded-xl overflow-hidden soft-shadow flex flex-col md:flex-row">
+<div class="w-full md:w-1/2 h-64 md:h-auto" data-alt="A lush, sun-drenched field in Kurnool, featuring golden millet stalks ready for harvest under a clear blue sky, portraying agricultural richness and heritage sourcing in a bright, modern photographic style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB10QMTHtKiWuzD6CtyZA3zm1PjspEYbFNo0HQ2EN9AkK4XwRMyn-zZANijDXLdDtOpz8Xv6JfkRvCSzt51cqZnnhwl1XCrNWi_W49Eo59HSwCNEm5wvuE802uSZ1KoasZnazPiPLufi_qo26e60hlhgD0uZObo6ZTAJdg74cLUNm0gSMg3enOxB49HbdxGTl-Vw2klrkChNzihq8kWwm2rAsRcxzlWB_o0EKaHKk0FlSN0k5t5F8ljIByhtFZoqLQrB4lyPdq_03E')"></div>
+<div class="w-full md:w-1/2 p-8 flex flex-col justify-center bg-surface">
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Heritage Sourcing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Directly sourced from Kurnool's nutrient-rich soils with full farm-to-table traceability. Honoring our roots.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Commitment Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-24 text-center max-w-4xl mx-auto">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 opacity-80" data-weight="fill">spa</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Earth &amp; Ethos</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Our commitment to excellence goes beyond basic standards. We bridge traditional agricultural wisdom with modern scientific precision. Every seed that bears the Rithwik name is a testament to our profound respect for nature and our unwavering dedication to providing nurturing purity for you.
+            </p>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-16 grid grid-cols-1 md:grid-cols-12 gap-bento-gap bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container">
+<div class="col-span-1 md:col-span-4 flex flex-col justify-between">
+<div>
+<h4 class="font-headline-md text-headline-md text-primary-fixed dark:text-primary-fixed-dim mb-4">Rithwik</h4>
+<p class="font-body-md text-body-md opacity-80 max-w-xs">Natural Purity, Nurtured for You.</p>
+</div>
+<p class="font-label-md text-label-md mt-8 md:mt-0 opacity-60">Â© 2024 Rithwik Industries. Natural Purity, Nurtured for You.</p>
+</div>
+<div class="col-span-1 md:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-8">
+<div class="flex flex-col space-y-4">
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200 focus:ring-2 focus:ring-secondary-container rounded px-1 -mx-1" href="about.html">About Kurnool Heritage</a>
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200 focus:ring-2 focus:ring-secondary-container rounded px-1 -mx-1" href="quality.html">Processing Standards</a>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200 focus:ring-2 focus:ring-secondary-container rounded px-1 -mx-1" href="millets.html">Millet Varieties</a>
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200 focus:ring-2 focus:ring-secondary-container rounded px-1 -mx-1" href="products.html">Bird Feed Blends</a>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200 focus:ring-2 focus:ring-secondary-container rounded px-1 -mx-1" href="#">Shipping Policy</a>
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200 focus:ring-2 focus:ring-secondary-container rounded px-1 -mx-1" href="wholesale.html">Contact Us</a>
+</div>
+</div>
+<div class="w-full text-center mt-10 pt-6 border-t border-primary-fixed/20"><p class="font-label-md text-label-md text-primary-fixed/60">A <a href="https://quantumpixel.duckdns.org" target="_blank" class="hover:text-secondary-container underline">quantumpixel.duckdns.org</a> product</p></div></footer>
+</body></html>
+
+
+

@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html><html lang="en"><head>
+  <script type="module" src="/@vite/client"></script>
+
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Rithwik Industries - Product Catalog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#2d4b37",
+                        "surface-container-low": "#f4f4ee",
+                        "on-secondary-container": "#785a1a",
+                        "tertiary": "#2e2f2c",
+                        "on-tertiary-fixed-variant": "#474744",
+                        "on-primary-container": "#99baa1",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#eeeee9",
+                        "surface-bright": "#fafaf4",
+                        "on-background": "#1a1c19",
+                        "tertiary-fixed": "#e4e2de",
+                        "secondary-fixed": "#ffdea5",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e3e3de",
+                        "tertiary-fixed-dim": "#c8c6c3",
+                        "primary-fixed-dim": "#adcfb4",
+                        "on-surface": "#1a1c19",
+                        "inverse-primary": "#adcfb4",
+                        "on-surface-variant": "#424843",
+                        "on-primary-fixed-variant": "#2f4d39",
+                        "on-tertiary-fixed": "#1b1c1a",
+                        "on-secondary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#2f312e",
+                        "outline": "#727972",
+                        "surface-tint": "#466550",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c2c8c0",
+                        "inverse-on-surface": "#f1f1ec",
+                        "on-secondary-fixed": "#261900",
+                        "secondary-fixed-dim": "#e9c176",
+                        "background": "#fafaf4",
+                        "surface-container-high": "#e8e8e3",
+                        "surface-container-highest": "#e3e3de",
+                        "primary-fixed": "#c8ebd0",
+                        "primary": "#163422",
+                        "on-tertiary-container": "#b3b2af",
+                        "on-primary-fixed": "#022110",
+                        "secondary": "#775a19",
+                        "secondary-container": "#fed488",
+                        "surface-dim": "#dadad5",
+                        "surface": "#fafaf4",
+                        "tertiary-container": "#444542",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#5d4201"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "bento-gap": "24px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Playfair Display"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #fdfbf7; }
+        .glass-panel {
+            background: rgba(253, 251, 247, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(197, 160, 89, 0.3);
+        }
+        .bento-shadow {
+            box-shadow: 0 4px 30px rgba(45, 75, 55, 0.04);
+        }
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(45, 75, 55, 0.08);
+        }
+    </style>
+<script type="module" src="/@id/virtual:stitch-nav"></script></head>
+<body class="text-on-background font-body-md antialiased pt-24">
+<!-- TopNavBar -->
+<nav class="bg-background/80 dark:bg-background/80 backdrop-blur-md fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-full mx-auto">
+<div class="flex items-center gap-4">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-on-primary-container">Rithwik</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim border-b-2 border-secondary dark:border-secondary-fixed-dim pb-1 hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="index.html">Organic Superfoods</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="products.html">Premium Bird Feeds</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="about.html">Our Heritage</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="quality.html">Sustainability</a>
+</div>
+<div class="flex items-center gap-4 text-primary dark:text-primary-fixed-dim">
+<button class="p-2 hover:bg-surface-variant rounded-full transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button class="p-2 hover:bg-surface-variant rounded-full transition-colors">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Layout -->
+<main class="px-margin-mobile md:px-margin-desktop py-12 max-w-[1600px] mx-auto">
+<header class="mb-12">
+<h1 class="font-display-lg text-display-lg text-primary mb-4">Line of Products</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">We offer a diverse range of products, including millets, superseeds, super foods, spices, and nuts. Sourced with care, nurtured for you.</p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-bento-gap relative">
+<!-- Sidebar / Filters (Sticky) -->
+<aside class="lg:col-span-3 space-y-8">
+<div class="glass-panel rounded-xl p-6 bento-shadow sticky top-32">
+<h2 class="font-headline-md text-headline-md text-primary mb-6 border-b border-outline-variant pb-2">Refine By</h2>
+<!-- Category Filter -->
+<div class="mb-6">
+<h3 class="font-label-md text-label-md text-secondary mb-3 uppercase tracking-wider">Category</h3>
+<div class="space-y-3">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="form-checkbox h-5 w-5 text-primary border-outline-variant rounded focus:ring-primary focus:ring-offset-0 bg-transparent transition-all" type="checkbox">
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">Millets</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="form-checkbox h-5 w-5 text-primary border-outline-variant rounded focus:ring-primary focus:ring-offset-0 bg-transparent transition-all" type="checkbox">
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">Seeds &amp; Super Foods</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox h-5 w-5 text-primary border-outline-variant rounded focus:ring-primary focus:ring-offset-0 bg-transparent transition-all" type="checkbox">
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">Bird Feed</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox h-5 w-5 text-primary border-outline-variant rounded focus:ring-primary focus:ring-offset-0 bg-transparent transition-all" type="checkbox">
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">Spices</span>
+</label>
+</div>
+</div>
+<!-- Benefits Filter -->
+<div class="mb-6">
+<h3 class="font-label-md text-label-md text-secondary mb-3 uppercase tracking-wider">Health Benefits</h3>
+<div class="flex flex-wrap gap-2">
+<button class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-md text-label-md hover:bg-primary/20 transition-colors">High Fiber</button>
+<button class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-md text-label-md hover:bg-primary/20 transition-colors">Gluten-Free</button>
+<button class="px-3 py-1 rounded-full border border-outline-variant text-on-surface-variant font-label-md text-label-md hover:border-primary hover:text-primary transition-colors">Antioxidants</button>
+<button class="px-3 py-1 rounded-full border border-outline-variant text-on-surface-variant font-label-md text-label-md hover:border-primary hover:text-primary transition-colors">Protein Rich</button>
+</div>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<div class="lg:col-span-9 space-y-12">
+<!-- Category Section: Millets -->
+<section>
+<div class="flex items-center gap-4 mb-6">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Millets</h2>
+<div class="h-px bg-outline-variant flex-grow"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-bento-gap">
+<!-- Product Card -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden bento-shadow product-card transition-all duration-300 flex flex-col border border-surface-container-high">
+<div class="aspect-square relative overflow-hidden bg-surface-container-low p-6 flex items-center justify-center">
+<img class="object-cover w-full h-full mix-blend-multiply opacity-90 rounded-full" data-alt="A stylized, top-down studio shot of Foxtail Millet grains arranged in a neat circular mound on a pristine cream background. High key, soft natural lighting emphasizes the organic texture and golden yellow hue of the grains. Minimalist and premium presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6Jfbf8Wqexo4zwRnkn20I6JagYGrcRIwEkMxypjZaaivai3U92uSDOkUUbJUES_POZ3IJRNmeodIFGU8maAxnoN5mfTKeH-8wCc4MmIfT8jsK-0czrh_l2EASGICSDSd8rRvrNJfVkNWZjyjWVosrOOpVugipBXavdSxyGXJ_Kqsrh3L5jbXgxMgrTartVdBdx3NY3dlKpVAW2AODHpUuYL1nrmKFWD_9UQUuIC0EHCr4MHM01eEqIzFZrE-Zb0PCdS22f1lefDY">
+<span class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded-full font-label-md text-label-md shadow-sm">Gluten-Free</span>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Foxtail Millet</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">Rich in dietary fiber and essential minerals, promoting digestive health.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-md text-label-md text-secondary">0% GST</span>
+<button class="bg-primary hover:bg-primary/90 text-on-primary px-4 py-2 rounded font-label-md text-label-md transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span> Add
+                                    </button>
+</div>
+</div>
+</article>
+<!-- Product Card -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden bento-shadow product-card transition-all duration-300 flex flex-col border border-surface-container-high">
+<div class="aspect-square relative overflow-hidden bg-surface-container-low p-6 flex items-center justify-center">
+<img class="object-cover w-full h-full mix-blend-multiply opacity-90 rounded-full" data-alt="A macro studio shot of Kodo Millet grains forming a small, perfect mound against a soft white background. The lighting is diffused and bright, highlighting the slightly reddish-brown color and fine texture of the organic grains. Clean, modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzZ7FqKEhqJFbeCqPo-P575macsZTHMriFJ1094DrltzUFOYkIV-S_lyv1Iu8YGM2iyNbU88_JLy7BsC8Guc34dixOOWn-0zAJG4nmbP9b-ns7A27aOEBTkhIviGC-HgtecnG2JuZTbtcFqjbyIk9cSVyuwXFdl6On-s7woLccbmrBklj6ac1hf9F9BOshr6OenI0y7RHso3x8ixOo1vvebzRQHAc0WGn_1_OmTaY7ZxEw2Vn_vcUJ7mDg1Wec_dtnF8qM8rEltk4">
+<span class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded-full font-label-md text-label-md shadow-sm">Antioxidants</span>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Kodo Millet</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">High in polyphenols, excellent for managing blood sugar levels.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-md text-label-md text-secondary">0% GST</span>
+<button class="bg-primary hover:bg-primary/90 text-on-primary px-4 py-2 rounded font-label-md text-label-md transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span> Add
+                                    </button>
+</div>
+</div>
+</article>
+<!-- Product Card -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden bento-shadow product-card transition-all duration-300 flex flex-col border border-surface-container-high">
+<div class="aspect-square relative overflow-hidden bg-surface-container-low p-6 flex items-center justify-center">
+<img class="object-cover w-full h-full mix-blend-multiply opacity-90 rounded-full" data-alt="A beautifully lit, top-down view of Proso Millet grains arranged organically on an off-white surface. The pale yellow grains catch the light, showing off their smooth texture. The composition is airy and minimalist, reflecting a premium health food brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4PjZSwcuT4fZhmsGdaOBZU-MWNInVWu9OBAQ61tEFOzuKZ5ufkIDritF_nQtZx6bCvb35Zawd06ADS1oWM9m65_-TnmswVgQjQ-MkOdcxguuYrHsYOB-CkYNiDgMg7d9ibeZjLjGfmEbrEQP4F1Vb-Z5Uq3XKf0gNig-bz-yUMMahp637UenBjsy0r7NSewa85Jjr9VeUpvOLQMhgfFjTiLM6Uml8MdOc4gwnDYOoHGoNOVR6_u9tB8l-03JaPHaP2BbaynKcrKs">
+<span class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded-full font-label-md text-label-md shadow-sm">High Protein</span>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Proso Millet</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">A great source of plant-based protein and complex carbohydrates.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-md text-label-md text-secondary">0% GST</span>
+<button class="bg-primary hover:bg-primary/90 text-on-primary px-4 py-2 rounded font-label-md text-label-md transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span> Add
+                                    </button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Informational Bento Banner -->
+<section class="bg-surface-container-low rounded-xl p-8 md:p-12 bento-shadow border border-outline-variant/30 flex flex-col md:flex-row items-center gap-8 my-16">
+<div class="flex-1">
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">The Power of Millets</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Millets are rich in fiber, antioxidants, and essential nutrients, making them a great choice for gluten-free diets, weight management, and digestive health. Rediscover ancient grains.</p>
+<button class="border-b-2 border-secondary text-secondary font-label-md text-label-md pb-1 hover:text-primary hover:border-primary transition-colors flex items-center gap-2">
+                            Learn more about our heritage <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<div class="flex-1 w-full md:w-auto relative aspect-[4/3] rounded-lg overflow-hidden">
+<div class="bg-cover bg-center w-full h-full absolute inset-0" data-alt="A curated flat lay composition of various millets in small rustic wooden bowls on a textured cream linen cloth. Scattered wheat stalks and soft, warm sunlight create an inviting, earthy, yet highly premium aesthetic suitable for an artisanal food brand." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCc-mSnq0VPJDekqv3uOJeUZDTXoG1rqHicbzRS3rgLlBsItHQPaTxr6sv2R2Hx6Mtl4jNZ6wrsmzxKHNU-inOvTJC89IAl_HjX6RORNEpXOImSwgSKZpXYQtnS203qil-WZ2xRd2UFZOB1nRVmSchuZEy2AreyOyWJ1XFnMsuD68fP-FKdrhGKFXdkQ4Z4j5POmL6pqHPzdQlOOMlrRaM4vNP7yKivo62QC8i6AIJmZYOpvYuuJarjg4kLwOGS5MAHtTmsh2lQYQY')"></div>
+</div>
+</section>
+<!-- Category Section: Seeds & Super Foods -->
+<section>
+<div class="flex items-center gap-4 mb-6">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Seeds &amp; Super Foods</h2>
+<div class="h-px bg-outline-variant flex-grow"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-bento-gap">
+<!-- Product Card -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden bento-shadow product-card transition-all duration-300 flex flex-col border border-surface-container-high">
+<div class="aspect-square relative overflow-hidden bg-surface-container-low p-6 flex items-center justify-center">
+<img class="object-cover w-full h-full mix-blend-multiply opacity-90 rounded-full" data-alt="A pile of premium green pumpkin seeds (pepitas) photographed from above on a clean, light surface. The vibrant green color of the seeds contrasts subtly with the minimalist background. The lighting is crisp and studio-quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTd0BihfYGnxtSnVZJau6gKleOn7bgcICEd4Wnf96Q6J_g2eipquSGPH2r069p1EB6JlWrtrlgcTmpEe0K8-Vi5aOw47_1nnu59txb0LtuvZlyxTjQ88AVCygA-_BWLmAn8GYyHHON-rV1Y9P3h7i6WlEpb-WN8GBhGWm70zrEoEQ3OxyOq0MSAkvcoGnpuyEUrkimO1dlFKrU2AN4a3ZonB2oD81R3aEbsLTvJXoWd4gbsJyV97DiWLTokul30VRRPaD6MJGo2f4">
+<span class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded-full font-label-md text-label-md shadow-sm">Magnesium Rich</span>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Pumpkin Seeds</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">Packed with magnesium, zinc, and healthy fats. Perfect for snacking or salads.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-md text-label-md text-secondary">5% GST</span>
+<button class="bg-primary hover:bg-primary/90 text-on-primary px-4 py-2 rounded font-label-md text-label-md transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span> Add
+                                    </button>
+</div>
+</div>
+</article>
+<!-- Product Card -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden bento-shadow product-card transition-all duration-300 flex flex-col border border-surface-container-high">
+<div class="aspect-square relative overflow-hidden bg-surface-container-low p-6 flex items-center justify-center">
+<img class="object-cover w-full h-full mix-blend-multiply opacity-90 rounded-full" data-alt="Close up studio shot of dark, textured chia seeds neatly arranged in a scoop-like formation against a seamless cream background. The intricate detail of each tiny seed is visible under sharp, high-key lighting, conveying purity and nutritional density." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMXe8rZd4bdMAkQbtT6nROri8-syXM9kbWaMPmk9bYAE1otN8Xqfc8BxT5jCk94tSL7zu9wFQl9RBkmPhM9LvC7_6iX4c03bxc-SbdkPCSbJZuRUxCcW5RZ1o2o5F_k9mZUpQRJgzGxDojW5oLMa89kXN_WUOnHkva9OCRqSS4nsSDKauWnXVDTbrJc7ogkQaAw_2hPoZv0rFL2I1hfhfO7EjRa1WphWVX09SPQY_4bM-7i6TaI0CGrkZGmDGhD6wMVtTAYtm1d34">
+<span class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded-full font-label-md text-label-md shadow-sm">Omega-3</span>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Chia Seeds</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">A powerhouse of Omega-3 fatty acids, fiber, and high-quality protein.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-md text-label-md text-secondary">5% GST</span>
+<button class="bg-primary hover:bg-primary/90 text-on-primary px-4 py-2 rounded font-label-md text-label-md transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span> Add
+                                    </button>
+</div>
+</div>
+</article>
+<!-- Product Card -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden bento-shadow product-card transition-all duration-300 flex flex-col border border-surface-container-high">
+<div class="aspect-square relative overflow-hidden bg-surface-container-low p-6 flex items-center justify-center">
+<img class="object-cover w-full h-full mix-blend-multiply opacity-90 rounded-full" data-alt="A mix of white, red, and black quinoa seeds beautifully clustered together on a stark white background. The varied textures and earthy tones of the superfood seeds are highlighted by soft, diffused studio lighting, creating a high-end natural aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHhqQVNZPzQy-PInToqKAaieNLXSj6IW0f38dXCcgBm08OZa1w6GDQl6XO5J7aUwC06Q6lEgwAhMag5NIResSftu9EO7eWWJDvl6ExoTdekB3OAm0LkMMEe4zapVCUyIZKT8Y0w0g-ELT5L36PXh7s96590b4r78nmS4RR1mmZWeUILFSWVmqHVRW6dciR2pXoW-7XeTG4CWDphms5QV9F9_adfphP7fVUl7pFDMRrU9JgPsawRslr4YpBN10k-SmMHVoRDXnIdl4">
+<span class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded-full font-label-md text-label-md shadow-sm">Complete Protein</span>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Quinoa Seeds</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">One of the few plant foods that contain sufficient amounts of all nine essential amino acids.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-md text-label-md text-secondary">0% GST</span>
+<button class="bg-transparent border border-secondary text-secondary hover:bg-secondary/10 px-4 py-2 rounded font-label-md text-label-md transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">mail</span> Enquire
+                                    </button>
+</div>
+</div>
+</article>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-16 grid grid-cols-1 md:grid-cols-12 gap-bento-gap bg-primary dark:bg-primary-container mt-24">
+<div class="md:col-span-4 lg:col-span-3">
+<span class="font-headline-md text-headline-md text-primary-fixed dark:text-primary-fixed-dim block mb-4">Rithwik</span>
+<p class="font-body-md text-body-md text-on-primary dark:text-on-primary-container opacity-80 mb-6">Natural Purity, Nurtured for You.</p>
+</div>
+<div class="md:col-span-8 lg:col-span-9 grid grid-cols-2 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-3">
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200 focus:ring-2 focus:ring-secondary-container outline-none rounded-sm" href="about.html">About Kurnool Heritage</a>
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200 focus:ring-2 focus:ring-secondary-container outline-none rounded-sm" href="quality.html">Processing Standards</a>
+</div>
+<div class="flex flex-col gap-3">
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200 focus:ring-2 focus:ring-secondary-container outline-none rounded-sm" href="millets.html">Millet Varieties</a>
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200 focus:ring-2 focus:ring-secondary-container outline-none rounded-sm" href="products.html">Bird Feed Blends</a>
+</div>
+<div class="flex flex-col gap-3">
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200 focus:ring-2 focus:ring-secondary-container outline-none rounded-sm" href="#">Shipping Policy</a>
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200 focus:ring-2 focus:ring-secondary-container outline-none rounded-sm" href="wholesale.html">Contact Us</a>
+</div>
+</div>
+<div class="col-span-1 md:col-span-12 mt-12 pt-8 border-t border-primary-fixed/20">
+<p class="font-body-md text-body-md text-on-primary dark:text-on-primary-container opacity-60 text-center md:text-left">
+                Â© 2024 Rithwik Industries. Natural Purity, Nurtured for You.
+            </p>
+</div>
+<div class="w-full text-center mt-10 pt-6 border-t border-primary-fixed/20"><p class="font-label-md text-label-md text-primary-fixed/60">A <a href="https://quantumpixel.duckdns.org" target="_blank" class="hover:text-secondary-container underline">quantumpixel.duckdns.org</a> product</p></div></footer>
+</body></html>
+
+
+

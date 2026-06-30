@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html><html lang="en"><head>
+  <script type="module" src="/@vite/client"></script>
+
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Rithwik Industries - Our Heritage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#2d4b37",
+                    "surface-container-low": "#f4f4ee",
+                    "on-secondary-container": "#785a1a",
+                    "tertiary": "#2e2f2c",
+                    "on-tertiary-fixed-variant": "#474744",
+                    "on-primary-container": "#99baa1",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#eeeee9",
+                    "surface-bright": "#fafaf4",
+                    "on-background": "#1a1c19",
+                    "tertiary-fixed": "#e4e2de",
+                    "secondary-fixed": "#ffdea5",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#e3e3de",
+                    "tertiary-fixed-dim": "#c8c6c3",
+                    "primary-fixed-dim": "#adcfb4",
+                    "on-surface": "#1a1c19",
+                    "inverse-primary": "#adcfb4",
+                    "on-surface-variant": "#424843",
+                    "on-primary-fixed-variant": "#2f4d39",
+                    "on-tertiary-fixed": "#1b1c1a",
+                    "on-secondary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "inverse-surface": "#2f312e",
+                    "outline": "#727972",
+                    "surface-tint": "#466550",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#c2c8c0",
+                    "inverse-on-surface": "#f1f1ec",
+                    "on-secondary-fixed": "#261900",
+                    "secondary-fixed-dim": "#e9c176",
+                    "background": "#fafaf4",
+                    "surface-container-high": "#e8e8e3",
+                    "surface-container-highest": "#e3e3de",
+                    "primary-fixed": "#c8ebd0",
+                    "primary": "#163422",
+                    "on-tertiary-container": "#b3b2af",
+                    "on-primary-fixed": "#022110",
+                    "secondary": "#775a19",
+                    "secondary-container": "#fed488",
+                    "surface-dim": "#dadad5",
+                    "surface": "#fafaf4",
+                    "tertiary-container": "#444542",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#5d4201"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "bento-gap": "24px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "64px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "headline-lg": [
+                            "Playfair Display"
+                    ],
+                    "body-md": [
+                            "Inter"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "headline-md": [
+                            "Playfair Display"
+                    ],
+                    "display-lg": [
+                            "Playfair Display"
+                    ],
+                    "headline-lg-mobile": [
+                            "Playfair Display"
+                    ],
+                    "label-md": [
+                            "Inter"
+                    ]
+            },
+            "fontSize": {
+                    "headline-lg": [
+                            "40px",
+                            {
+                                    "lineHeight": "48px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-md": [
+                            "28px",
+                            {
+                                    "lineHeight": "36px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "display-lg": [
+                            "64px",
+                            {
+                                    "lineHeight": "72px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .bento-shadow {
+            box-shadow: 0px 10px 30px rgba(45, 75, 55, 0.04);
+        }
+    </style>
+<script type="module" src="/@id/virtual:stitch-nav"></script></head>
+<body class="bg-background text-on-background font-body-md antialiased pt-24">
+<!-- Navigation -->
+<nav class="bg-background/80 dark:bg-background/80 backdrop-blur-md fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 max-w-full mx-auto hidden md:flex">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight"><a href="index.html" class="flex items-center gap-2 hover:text-secondary transition-colors"><img src="../favicon.ico" alt="Logo" class="w-8 h-8 rounded-full shadow-sm"> Rithwik</a></div>
+<div class="flex space-x-8">
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label-md text-label-md" href="index.html">Organic Superfoods</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label-md text-label-md" href="products.html">Premium Bird Feeds</a>
+<a class="text-secondary border-b-2 border-secondary pb-1 font-label-md text-label-md hover:text-secondary transition-colors duration-300 opacity-80 scale-95 transition-all" href="about.html">Our Heritage</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label-md text-label-md" href="quality.html">Sustainability</a>
+</div>
+<div class="flex space-x-4 text-primary">
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary transition-colors duration-300">person</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary transition-colors duration-300">shopping_cart</span>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-margin-desktop pb-24 pt-8">
+<div class="relative w-full h-[614px] rounded-xl overflow-hidden bento-shadow">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A breathtaking, cinematic wide shot of the lush, golden fields of Kurnool at sunrise. The landscape is bathed in a warm, ethereal light, highlighting the rich agricultural heritage. In the distance, a subtle, modern, clean processing facility stands, harmonizing with nature. The mood is majestic and rooted in deep earthy tones of gold and green." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCJTipGGYQoAPYeZhinX4DPEknSxnwe3zo_apqjn2rkQ85GIulWerQH5Oly79B2sSQsH4q6V9Fxz022GbRugJk_Jcv9nyMPXJnZM9FCjm73T2jYCndXTf7ckJMqsjILjcj1oM-Zt6CnWbLRZ7FlxWWsZbca3PIBCKw-yVi2PDEimvFKXLrh9WO8aLQb3RyT6Gg_EQl72FPsfq7a3oYkglts0zCc-3aIWy2sbaBTr9-UWG18kJYeI0sgX91m3huchXGX6PsM0xnOVzQ')"></div>
+<div class="absolute inset-0 bg-primary/40 flex items-center justify-center p-8 text-center">
+<h1 class="font-display-lg text-display-lg text-on-primary">Kurnool's Legacy, Global Standards</h1>
+</div>
+</div>
+</section>
+<!-- The Process - Bento Grid -->
+<section class="px-margin-mobile md:px-margin-desktop py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">The Process</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">From the rich soils of Kurnool to the precision milling of our state-of-the-art facilities, we ensure every grain meets exacting standards.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-bento-gap">
+<!-- Bento Item 1 -->
+<div class="col-span-1 md:col-span-7 bg-surface rounded-xl p-8 bento-shadow flex flex-col justify-center border border-secondary/30">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4">agriculture</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Sourcing Purity</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We partner directly with local farmers who employ generations of ancestral agricultural wisdom. Our raw materials are selected for their natural purity and resilience.</p>
+</div>
+<!-- Bento Item 2 -->
+<div class="col-span-1 md:col-span-5 rounded-xl overflow-hidden bento-shadow h-64 md:h-auto">
+<div class="w-full h-full bg-cover bg-center" data-alt="Close-up macro photography of hands carefully sifting through premium, golden bird feed seeds. The lighting is bright and natural, emphasizing the texture and purity of the grains against a soft, creamy background. The aesthetic is clean, organic, and modern." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAhqLbW-ITIw8TJtmtbBtSHnF9Hri3H48x6lmyrfBqejU7o9Kfv5mgF2wnZOQMYiat0JTzGAGAxk8tbkL-iEHPMIq0XQnfG3XddnqpkIqj3NARr221u2f59JyICPRLI1wck_QVohySHX2PthgxVzBPRV96aPdFxMOFDC06zYbMMClhdoYyN6cA4yxHHJcTNTAxEniFIFLZ7JMsgxseJo08VunYUXDj_vYC8GXP-i5W5SS4uUjkiO4aP3fg3NCHjomvUneD5Vsg9PLI')"></div>
+</div>
+<!-- Bento Item 3 -->
+<div class="col-span-1 md:col-span-5 rounded-xl overflow-hidden bento-shadow h-64 md:h-auto order-last md:order-none">
+<div class="w-full h-full bg-cover bg-center" data-alt="A macro shot of a modern, clean, metallic milling machine processing organic superfoods. The image highlights scientific precision and hygiene, with gleaming stainless steel surfaces and a bright, sterile, yet warm lighting environment. The focus is on the fine, powdery output." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCUIPjjX0c6YTblWC__A6qMevZW1VQWeoEe09ojkIX5_5qjnD3pikfRqWsCt4gR3pKEpezdwoiLeGv81jmcOHUB0RiGW4_ymEm7qhe67OFyA__ncbKAq6EErReWtHW5antp4fnAuv63SjiG7tgjJXj9KM8JMQ0Fm1lnrHq-B92QsZwbswlAEHNW7n766qYLx9vN-FmjnW-vXR1L9SGuo8pAd_uBVItpPbXwN5af45pwx5Sc4oUkLxysGg9kzb9cEopdb1V6tbQwjGM')"></div>
+</div>
+<!-- Bento Item 4 -->
+<div class="col-span-1 md:col-span-7 bg-primary-container rounded-xl p-8 bento-shadow flex flex-col justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-4xl text-secondary-container mb-4">precision_manufacturing</span>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-4">Precision Milling</h3>
+<p class="font-body-md text-body-md text-on-primary-container">Our facilities bridge the gap between traditional harvests and modern scientific precision. Every batch is milled to exact specifications, preserving nutritional integrity.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Transparency Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-32 text-center bg-surface-bright">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-display-lg text-display-lg text-primary mb-8 tracking-tight">Ingredient-First Philosophy</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                We believe in complete transparency. What you see is what you get. No hidden additives, no compromised processes. Just the pure, unadulterated essence of natureâs finest grains, nurtured for you.
+            </p>
+</div>
+</section>
+<!-- Address & CTA Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-24 bg-surface-container-low border-t border-surface-variant">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<!-- Address details referencing the image -->
+<div class="bg-surface rounded-xl p-10 bento-shadow border border-secondary/20">
+<h3 class="font-headline-md text-headline-md text-primary mb-6 border-b border-surface-variant pb-4">Our Headquarters</h3>
+<div class="flex items-start mb-6">
+<span class="material-symbols-outlined text-secondary mr-4 mt-1">location_on</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Office Address</p>
+<p class="font-body-lg text-body-lg text-primary font-semibold">87/1404, Near Nandyal Checkpost</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Kurnool, Andhra Pradesh, 518002</p>
+</div>
+</div>
+<div class="flex items-center mb-6">
+<span class="material-symbols-outlined text-secondary mr-4">call</span>
+<p class="font-body-lg text-body-lg text-primary font-semibold">8309782770</p>
+</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-secondary mr-4">mail</span>
+<p class="font-body-md text-body-md text-primary">rithwikindustries@gmail.com</p>
+</div>
+</div>
+<!-- CTAs -->
+<div class="flex flex-col space-y-6 justify-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Connect With Us</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Whether you are looking for premium bulk supplies or the finest ingredients for your home.</p>
+<button class="bg-primary text-on-primary font-label-md text-label-md py-4 px-8 rounded-lg hover:bg-primary/90 transition-colors shadow-sm w-full md:w-auto text-center flex items-center justify-center">
+                    Partner with Us
+                    <span class="material-symbols-outlined ml-2 text-sm">handshake</span>
+</button>
+<button class="bg-surface-lowest text-secondary border border-secondary font-label-md text-label-md py-4 px-8 rounded-lg hover:bg-surface-variant transition-colors w-full md:w-auto text-center flex items-center justify-center">
+                    Shop Now
+                    <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-primary-container w-full px-margin-desktop py-16 grid grid-cols-1 md:grid-cols-12 gap-bento-gap">
+<div class="col-span-1 md:col-span-4 flex flex-col justify-between">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight"><a href="index.html" class="flex items-center gap-2 hover:text-secondary transition-colors"><img src="../favicon.ico" alt="Logo" class="w-8 h-8 rounded-full shadow-sm"> Rithwik</a></div>
+<p class="text-on-primary dark:text-on-primary-container font-body-md text-body-md opacity-80">
+                Â© 2024 Rithwik Industries. Natural Purity, Nurtured for You.
+            </p>
+</div>
+<div class="col-span-1 md:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-8">
+<div class="flex flex-col space-y-4">
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200" href="about.html">About Kurnool Heritage</a>
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200" href="quality.html">Processing Standards</a>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200" href="millets.html">Millet Varieties</a>
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200" href="products.html">Bird Feed Blends</a>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Shipping Policy</a>
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200" href="wholesale.html">Contact Us</a>
+</div>
+</div>
+<div class="w-full text-center mt-10 pt-6 border-t border-primary-fixed/20"><p class="font-label-md text-label-md text-primary-fixed/60">A <a href="https://quantumpixel.duckdns.org" target="_blank" class="hover:text-secondary-container underline">quantumpixel.duckdns.org</a> product</p></div></footer>
+</body></html>
+
+
+

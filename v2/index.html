@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html><html lang="en"><head>
+  <script type="module" src="/@vite/client"></script>
+
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Rithwik - Nature's Grain, Nurtured for You</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#2d4b37",
+                        "surface-container-low": "#f4f4ee",
+                        "on-secondary-container": "#785a1a",
+                        "tertiary": "#2e2f2c",
+                        "on-tertiary-fixed-variant": "#474744",
+                        "on-primary-container": "#99baa1",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#eeeee9",
+                        "surface-bright": "#fafaf4",
+                        "on-background": "#1a1c19",
+                        "tertiary-fixed": "#e4e2de",
+                        "secondary-fixed": "#ffdea5",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e3e3de",
+                        "tertiary-fixed-dim": "#c8c6c3",
+                        "primary-fixed-dim": "#adcfb4",
+                        "on-surface": "#1a1c19",
+                        "inverse-primary": "#adcfb4",
+                        "on-surface-variant": "#424843",
+                        "on-primary-fixed-variant": "#2f4d39",
+                        "on-tertiary-fixed": "#1b1c1a",
+                        "on-secondary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#2f312e",
+                        "outline": "#727972",
+                        "surface-tint": "#466550",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c2c8c0",
+                        "inverse-on-surface": "#f1f1ec",
+                        "on-secondary-fixed": "#261900",
+                        "secondary-fixed-dim": "#e9c176",
+                        "background": "#fafaf4",
+                        "surface-container-high": "#e8e8e3",
+                        "surface-container-highest": "#e3e3de",
+                        "primary-fixed": "#c8ebd0",
+                        "primary": "#163422",
+                        "on-tertiary-container": "#b3b2af",
+                        "on-primary-fixed": "#022110",
+                        "secondary": "#775a19",
+                        "secondary-container": "#fed488",
+                        "surface-dim": "#dadad5",
+                        "surface": "#fafaf4",
+                        "tertiary-container": "#444542",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#5d4201"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "bento-gap": "24px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Playfair Display"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .soft-shadow {
+            box-shadow: 0px 10px 30px rgba(45, 75, 55, 0.04);
+        }
+        .bento-hover {
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .bento-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 20px 50px rgba(45, 75, 55, 0.12);
+        }
+        .img-hover img {
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .img-hover:hover img {
+            transform: scale(1.05);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .cta-button {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -10px rgba(22, 52, 34, 0.5);
+        }
+    </style>
+<script type="module" src="/@id/virtual:stitch-nav"></script></head>
+<body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden">
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-full mx-auto bg-background/90 backdrop-blur-xl border-b border-outline-variant/10 transition-all duration-300">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight"><a href="index.html" class="flex items-center gap-2 hover:text-secondary transition-colors"><img src="../favicon.ico" alt="Logo" class="w-8 h-8 rounded-full shadow-sm"> Rithwik</a></div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="font-label-md text-label-md text-secondary border-b-2 border-secondary pb-1 opacity-90 transition-all" href="index.html">Organic Superfoods</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="products.html">Premium Bird Feeds</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="about.html">Our Heritage</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="quality.html">Sustainability</a>
+</nav>
+<div class="flex items-center gap-6 text-primary">
+<button aria-label="Profile" class="hover:text-secondary transition-colors duration-300">
+<span class="material-symbols-outlined text-2xl">person</span>
+</button>
+<button aria-label="Cart" class="hover:text-secondary transition-colors duration-300 relative">
+<span class="material-symbols-outlined text-2xl">shopping_cart</span>
+<span class="absolute -top-1 -right-1 w-2 h-2 bg-secondary rounded-full"></span>
+</button>
+<button aria-label="Menu" class="md:hidden hover:text-secondary transition-colors duration-300">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-32 pb-24">
+<!-- Split Hero Section with Parallax -->
+<section class="grid grid-cols-1 md:grid-cols-2 min-h-[870px] w-full px-margin-mobile md:px-margin-desktop gap-gutter mb-32 reveal">
+<!-- Industries Side -->
+<div class="relative rounded-2xl overflow-hidden group bg-surface-container-low border border-secondary/5 flex flex-col justify-center items-start p-8 md:p-16 soft-shadow transition-all duration-700 hover:border-secondary/20">
+<div class="absolute inset-0 opacity-25 bg-[url('placeholder')] bg-cover bg-fixed bg-center mix-blend-multiply transition-transform duration-1000 group-hover:scale-105" data-alt="Close up photography of assorted golden millets and grains scattered gracefully on a pristine white marble surface, bathed in soft, warm, natural morning light, capturing the organic texture and purity of agricultural produce in a highly stylized, minimalist aesthetic."></div>
+<div class="relative z-10 w-full max-w-lg">
+<p class="font-label-md text-label-md text-secondary tracking-[0.2em] uppercase mb-6 flex items-center gap-4">
+<span class="w-8 h-px bg-secondary/50"></span> Rithwik Industries
+                </p>
+<h1 class="font-display-lg text-display-lg md:text-[72px] leading-tight text-primary mb-8">Organic<br>Superfoods</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed">Nature's Grain, Nurtured for You. Discover our premium selection of millets, seeds, and spices cultivated with ancestral wisdom.</p>
+<button class="cta-button bg-primary text-on-primary font-label-md text-label-md px-10 py-5 rounded-full hover:bg-surface-tint transition-all duration-300 inline-flex items-center gap-3 tracking-wide">
+                    Explore Millets <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Bird Feeds Side -->
+<div class="relative rounded-2xl overflow-hidden group bg-[#15231b] border border-secondary/5 flex flex-col justify-center items-start p-8 md:p-16 soft-shadow transition-all duration-700 hover:border-secondary/20">
+<div class="absolute inset-0 opacity-40 bg-[url('placeholder')] bg-cover bg-fixed bg-center mix-blend-overlay transition-transform duration-1000 group-hover:scale-105" data-alt="A macro shot of a rich, textured blend of bird feed seeds including sunflower and safflower, resting on a dark, earthy slate background, illuminated by dramatic side lighting that highlights the depth, colors, and premium quality of the specialized nutrition blend in a moody, sophisticated style."></div>
+<div class="relative z-10 w-full max-w-lg">
+<p class="font-label-md text-label-md text-secondary-container tracking-[0.2em] uppercase mb-6 flex items-center gap-4">
+<span class="w-8 h-px bg-secondary-container/50"></span> Rithwik Bird Feeds
+                </p>
+<h1 class="font-display-lg text-display-lg md:text-[72px] leading-tight text-on-primary mb-8">Premium<br>Nutrients</h1>
+<p class="font-body-lg text-body-lg text-surface-variant/80 mb-10 leading-relaxed">Scientifically formulated blends ensuring optimal health and vitality for your avian companions, sourced from the finest origins.</p>
+<button class="cta-button bg-transparent border border-secondary-container text-secondary-container font-label-md text-label-md px-10 py-5 rounded-full hover:bg-secondary-container hover:text-[#15231b] transition-all duration-300 inline-flex items-center gap-3 tracking-wide">
+                    View Blends <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Scientific Purity Bar -->
+<section class="bg-surface-container/50 py-16 px-margin-mobile md:px-margin-desktop mb-32 reveal">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12 md:gap-8 text-center md:text-left">
+<div class="flex flex-col md:flex-row items-center gap-6 group cursor-default">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center group-hover:bg-primary/5 transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-secondary">verified</span>
+</div>
+<div>
+<p class="font-headline-md text-[22px] text-primary mb-1">Certified Processing</p>
+<p class="font-body-md text-on-surface-variant text-sm">Maintaining highest standards of purity</p>
+</div>
+</div>
+<div class="w-px h-16 bg-outline-variant/30 hidden md:block"></div>
+<div class="flex flex-col md:flex-row items-center gap-6 group cursor-default">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center group-hover:bg-primary/5 transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-secondary">gavel</span>
+</div>
+<div>
+<p class="font-headline-md text-[22px] text-primary mb-1">GSTIN Compliant</p>
+<p class="font-body-md text-on-surface-variant text-sm font-mono tracking-wider">37ABKFR7391G1ZM</p>
+</div>
+</div>
+<div class="w-px h-16 bg-outline-variant/30 hidden md:block"></div>
+<div class="flex flex-col md:flex-row items-center gap-6 group cursor-default">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center group-hover:bg-primary/5 transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-secondary">agriculture</span>
+</div>
+<div>
+<p class="font-headline-md text-[22px] text-primary mb-1">Directly Sourced</p>
+<p class="font-body-md text-on-surface-variant text-sm">From farm to our state-of-the-art facility</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Highlights -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-[1600px] mx-auto mb-32 reveal">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1 relative h-[600px] rounded-2xl overflow-hidden img-hover">
+<img alt="Close up photography of assorted golden millets" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwmEteuyo5gdxv-KCLfDVoMysAGr5oRAMO4qYNFSQZhOGy3Zb8rYw_Uoj3Vr29kUNn-RasGR1iQLAs07RTgDgNEog93bBpCp7sagWn6IjsMThCYqPGXXZd4_Amq-zwULLdZCyNobTmpxMnQwG9wYFx7WRB01H7FdKL3w1eT7Sh0pwzH7ng_9zvZxJHm2CtbkVvq7yDr7UjVijkiitHqEikp3GZVMjvgV8Gu82H2m8YnXRKXeKR19AeBYX0mf-qiAwS-S0Apmt-JHA">
+</div>
+<div class="order-1 md:order-2 px-4 md:px-12">
+<p class="font-label-md text-label-md text-secondary tracking-[0.2em] uppercase mb-6 flex items-center gap-4">
+<span class="w-8 h-px bg-secondary/50"></span> Our Methodology
+                </p>
+<h2 class="font-headline-lg text-[48px] leading-tight text-primary mb-8">Precision Milling<br>&amp; Kurnool Heritage</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+                    Rooted in the agricultural heartland of Andhra Pradesh, our facilities in Sanjivareddypalle and Nandyal Checkpost ensure every grain is nurtured for you. We marry ancestral grain wisdom with modern, rigorous processing standards to deliver uncompromising quality.
+                </p>
+<div class="flex flex-col gap-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-3xl text-secondary mt-1">eco</span>
+<div>
+<h4 class="font-headline-md text-xl text-primary mb-2">Sustainable Practices</h4>
+<p class="font-body-md text-on-surface-variant">Ethically sourced directly from local farmers, supporting community growth and environmental stewardship.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-3xl text-secondary mt-1">diamond</span>
+<div>
+<h4 class="font-headline-md text-xl text-primary mb-2">Absolute Purity</h4>
+<p class="font-body-md text-on-surface-variant">Multi-stage cleaning and sorting processes guarantee 99.9% purity in every batch we produce.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Categories Editorial Grid -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-[1600px] mx-auto mb-32 reveal">
+<div class="text-center mb-20">
+<p class="font-label-md text-label-md text-secondary tracking-[0.2em] uppercase mb-4 justify-center flex items-center gap-4">
+<span class="w-8 h-px bg-secondary/50"></span> Collections <span class="w-8 h-px bg-secondary/50"></span>
+</p>
+<h2 class="font-display-lg text-[56px] text-primary mb-6">Our Line of Products</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">We offer a diverse range of products, including millets, superseeds, super foods, spices, and nuts, processed with absolute care.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 auto-rows-[minmax(400px,auto)]">
+<!-- Millets Editorial Card -->
+<div class="md:col-span-8 group rounded-2xl p-10 md:p-14 bento-hover border border-secondary/10 flex flex-col md:flex-row gap-12 relative overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 bg-surface-container-low opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+<div class="flex-1 z-10 flex flex-col justify-center">
+<div class="inline-flex items-center px-4 py-1.5 bg-primary/5 border border-primary/10 rounded-full mb-8">
+<span class="font-label-md text-sm text-primary tracking-wider uppercase">Core Category</span>
+</div>
+<h3 class="font-headline-lg text-[40px] text-primary mb-8">Premium Millets</h3>
+<ul class="grid grid-cols-2 gap-y-4 gap-x-2 font-body-md text-body-md text-on-surface-variant mb-10">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary/70">spa</span> Foxtail Millet</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary/70">spa</span> Kodo Millet</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary/70">spa</span> Proso Millet</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary/70">spa</span> Browntop Millet</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary/70">spa</span> Barnyard Millet</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary/70">spa</span> Little Millet</li>
+</ul>
+<div class="bg-surface-bright/80 backdrop-blur-sm p-6 rounded-xl border border-secondary/10 mt-auto">
+<p class="font-label-md text-secondary tracking-widest uppercase mb-2 text-xs">Health Benefits</p>
+<p class="font-body-md text-on-surface-variant leading-relaxed">Rich in fiber, antioxidants, and essential nutrients. Great for gluten-free diets, weight management, and digestive health.</p>
+</div>
+</div>
+<div class="flex-1 relative min-h-[400px] rounded-xl overflow-hidden img-hover shadow-lg">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A stylized overhead flat-lay photograph of six distinct varieties of raw millets arranged in neat, perfectly circular mounds on a pristine cream-colored background, showcasing their natural, earthy color variations from golden to deep reddish-brown, evenly lit to emphasize their organic texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwmEteuyo5gdxv-KCLfDVoMysAGr5oRAMO4qYNFSQZhOGy3Zb8rYw_Uoj3Vr29kUNn-RasGR1iQLAs07RTgDgNEog93bBpCp7sagWn6IjsMThCYqPGXXZd4_Amq-zwULLdZCyNobTmpxMnQwG9wYFx7WRB01H7FdKL3w1eT7Sh0pwzH7ng_9zvZxJHm2CtbkVvq7yDr7UjVijkiitHqEikp3GZVMjvgV8Gu82H2m8YnXRKXeKR19AeBYX0mf-qiAwS-S0Apmt-JHA">
+</div>
+</div>
+<!-- Seeds Editorial Card -->
+<div class="md:col-span-4 bg-primary-container text-on-primary-container rounded-2xl p-10 md:p-14 bento-hover relative overflow-hidden flex flex-col justify-between shadow-xl">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-[120px]">local_florist</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-lg text-[40px] text-on-primary mb-8 leading-tight">Seeds &amp;<br>Super Foods</h3>
+<ul class="space-y-4 font-body-md text-body-md mb-12 opacity-90 text-lg">
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Pumpkin Seeds</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Sunflower Seeds</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Flax Seeds</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Safflower Seeds</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Sesame Seeds</li>
+<li class="pt-4 border-t border-on-primary-container/20 mt-4 flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Chia Seeds</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Quinoa Seeds</li>
+</ul>
+</div>
+<div class="relative z-10 mt-auto">
+<button class="cta-button w-full bg-secondary text-on-secondary font-label-md text-label-md py-4 rounded-xl hover:bg-secondary-container hover:text-secondary-fixed-variant inline-flex justify-center items-center gap-2">
+                        View All Seeds <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-20 grid grid-cols-1 md:grid-cols-12 gap-12 bg-primary text-on-primary border-t-4 border-secondary">
+<div class="md:col-span-4 flex flex-col gap-6">
+<h2 class="font-headline-lg text-4xl text-primary-fixed mb-2">Rithwik</h2>
+<p class="font-body-md text-body-md text-on-primary-container max-w-sm leading-relaxed">
+            Nature's Grain, Nurtured for You. Premium organic superfoods and scientifically formulated bird feeds from the heart of Andhra Pradesh.
+        </p>
+<p class="font-label-md text-label-md text-primary-fixed/60 mt-12 pt-8 border-t border-primary-container/50">
+            Â© 2024 Rithwik Industries. Natural Purity, Nurtured for You.
+        </p>
+</div>
+<div class="md:col-span-2 md:col-start-7 flex flex-col gap-5">
+<h3 class="font-label-md text-label-md text-secondary-container tracking-[0.15em] uppercase mb-4">Company</h3>
+<a class="font-body-md text-body-md text-primary-fixed/90 hover:text-secondary-container hover:translate-x-1 transition-all duration-300 inline-block" href="about.html">About Kurnool Heritage</a>
+<a class="font-body-md text-body-md text-primary-fixed/90 hover:text-secondary-container hover:translate-x-1 transition-all duration-300 inline-block" href="quality.html">Processing Standards</a>
+<a class="font-body-md text-body-md text-primary-fixed/90 hover:text-secondary-container hover:translate-x-1 transition-all duration-300 inline-block" href="wholesale.html">Contact Us</a>
+</div>
+<div class="md:col-span-2 flex flex-col gap-5">
+<h3 class="font-label-md text-label-md text-secondary-container tracking-[0.15em] uppercase mb-4">Products</h3>
+<a class="font-body-md text-body-md text-primary-fixed/90 hover:text-secondary-container hover:translate-x-1 transition-all duration-300 inline-block" href="millets.html">Millet Varieties</a>
+<a class="font-body-md text-body-md text-primary-fixed/90 hover:text-secondary-container hover:translate-x-1 transition-all duration-300 inline-block" href="products.html">Bird Feed Blends</a>
+<a class="font-body-md text-body-md text-primary-fixed/90 hover:text-secondary-container hover:translate-x-1 transition-all duration-300 inline-block" href="#">Shipping Policy</a>
+</div>
+<div class="md:col-span-2 flex flex-col gap-5">
+<h3 class="font-label-md text-label-md text-secondary-container tracking-[0.15em] uppercase mb-4">Contact</h3>
+<p class="font-body-md text-body-md text-primary-fixed/90 flex items-center gap-3"><span class="material-symbols-outlined text-secondary-container">mail</span> rithwikindustries@gmail.com</p>
+<p class="font-body-md text-body-md text-primary-fixed/90 flex items-center gap-3"><span class="material-symbols-outlined text-secondary-container">call</span> 8828282823</p>
+<p class="font-body-md text-body-md text-primary-fixed/90 flex items-start gap-3 mt-2"><span class="material-symbols-outlined text-secondary-container">location_on</span> 87/1404, Near Nandyal Checkpost, Kurnool</p>
+</div>
+<div class="w-full text-center mt-10 pt-6 border-t border-primary-fixed/20"><p class="font-label-md text-label-md text-primary-fixed/60">A <a href="https://quantumpixel.duckdns.org" target="_blank" class="hover:text-secondary-container underline">quantumpixel.duckdns.org</a> product</p></div></footer>
+<script>
+    // Scroll reveal animation
+    document.addEventListener("DOMContentLoaded", function() {
+        const reveals = document.querySelectorAll(".reveal");
+        
+        const revealOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+        
+        const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add("active");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, revealOptions);
+        
+        reveals.forEach(reveal => {
+            revealOnScroll.observe(reveal);
+        });
+    });
+</script>
+</body></html>
+
+
+

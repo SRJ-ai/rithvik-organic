@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+  <script type="module" src="/@vite/client"></script>
+
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Wholesale &amp; Bulk Enquiry | Rithwik Industries</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#f1f1ec",
+                        "on-primary-fixed-variant": "#2f4d39",
+                        "inverse-primary": "#adcfb4",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-primary-fixed": "#022110",
+                        "tertiary-container": "#444542",
+                        "surface-container": "#eeeee9",
+                        "primary": "#163422",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#fed488",
+                        "surface-container-highest": "#e3e3de",
+                        "on-primary-container": "#99baa1",
+                        "outline-variant": "#c2c8c0",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "on-error": "#ffffff",
+                        "secondary": "#775a19",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#f4f4ee",
+                        "tertiary-fixed-dim": "#c8c6c3",
+                        "background": "#fafaf4",
+                        "surface": "#fafaf4",
+                        "on-secondary-container": "#785a1a",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#c8ebd0",
+                        "secondary-fixed": "#ffdea5",
+                        "inverse-surface": "#2f312e",
+                        "primary-container": "#2d4b37",
+                        "on-tertiary-fixed-variant": "#474744",
+                        "surface-bright": "#fafaf4",
+                        "on-tertiary-container": "#b3b2af",
+                        "on-secondary-fixed": "#261900",
+                        "on-background": "#1a1c19",
+                        "tertiary-fixed": "#e4e2de",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#1b1c1a",
+                        "surface-variant": "#e3e3de",
+                        "on-surface": "#1a1c19",
+                        "tertiary": "#2e2f2c",
+                        "primary-fixed-dim": "#adcfb4",
+                        "outline": "#727972",
+                        "surface-dim": "#dadad5",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#466550",
+                        "surface-container-high": "#e8e8e3",
+                        "on-surface-variant": "#424843"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "bento-gap": "24px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter", "sans-serif"],
+                        "body-md": ["Inter", "sans-serif"],
+                        "body-lg": ["Inter", "sans-serif"],
+                        "display-lg": ["Playfair Display", "serif"],
+                        "headline-lg": ["Playfair Display", "serif"],
+                        "headline-md": ["Playfair Display", "serif"],
+                        "headline-lg-mobile": ["Playfair Display", "serif"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "600" }],
+                        "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .bento-shadow {
+            box-shadow: 0 4px 30px rgba(45, 75, 55, 0.04);
+        }
+        
+        /* Form Input Styling */
+        .minimal-input {
+            border: none;
+            border-bottom: 1px solid theme('colors.secondary-fixed-dim');
+            border-radius: 0;
+            background: transparent;
+            padding-left: 0;
+            padding-right: 0;
+            transition: all 0.3s ease;
+        }
+        .minimal-input:focus {
+            outline: none;
+            box-shadow: none;
+            border-bottom-color: theme('colors.primary');
+            border-bottom-width: 2px;
+            background-color: rgba(233, 193, 118, 0.05); /* very light tint of gold on focus */
+        }
+    </style>
+<script type="module" src="/@id/virtual:stitch-nav"></script></head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-full mx-auto bg-background/80 dark:bg-background/80 backdrop-blur-md">
+<div class="flex items-center gap-4">
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-on-primary-container tracking-tight" href="#">Rithwik</a>
+</div>
+<!-- Desktop Nav Links -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed" href="index.html">Organic Superfoods</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed" href="products.html">Premium Bird Feeds</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed" href="about.html">Our Heritage</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed" href="quality.html">Sustainability</a>
+</nav>
+<div class="flex items-center gap-4 text-primary dark:text-primary-fixed-dim">
+<button aria-label="person" class="p-2 hover:opacity-80 transition-all rounded-full hover:bg-surface-variant">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button aria-label="shopping_cart" class="p-2 hover:opacity-80 transition-all rounded-full hover:bg-surface-variant">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<!-- Mobile Menu Toggle (Simplified) -->
+<button aria-label="menu" class="md:hidden p-2 text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-[80px]"> <!-- pt accommodates fixed header -->
+<!-- Hero Section -->
+<section class="relative w-full h-[409px] md:h-[512px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0" data-alt="A wide, sweeping, high-resolution cinematic shot of a pristine agricultural milling facility or golden wheat field at golden hour. The image features deep earthy greens and warm golden light, reflecting a premium, scientific yet natural aesthetic. The composition is clean, sophisticated, and perfectly suited as a luxurious background for a professional B2B wholesale portal. High contrast, minimalist styling." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAiOMYR1JMjbTc6QMrkRaHWfi5r1ETHmZ0F6a9r933CU92AcgckZN6fqK0SMaMSO08Dw_oIVCmhDX4SUZ6u1w1Kksic7T_U-aIQKMieH2iMtgAvNP7GufWM4eH059oBBIvPoRUbwYgSo8zCzH7M7QIkHVjbJ3xXHd8gHTcqv6tb6YU-6kZySEufsV9EvS9pqDm5xb0m0uuSGf4828s-eICvGAA38qQqZpwjKboIJjzyjnD27YzdjtRJDN0JP3dvHpL1_dtbftLjz0g')"></div>
+<div class="absolute inset-0 z-10 bg-primary/70"></div> <!-- Overlay for text readability -->
+<div class="relative z-20 text-center px-margin-mobile md:px-margin-desktop w-full max-w-5xl mx-auto">
+<span class="font-label-md text-label-md text-secondary-container uppercase tracking-widest mb-4 block">Partner With Us</span>
+<h1 class="font-display-lg text-display-lg md:text-[64px] text-on-primary mb-6 leading-tight">Bulk &amp; Wholesale Enquiries</h1>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto">Scale your business with our premium, scientifically nurtured grains and feeds. Uncompromising quality for discerning partners.</p>
+</div>
+</section>
+<!-- Bento Grid Layout for Content -->
+<section class="px-margin-mobile md:px-margin-desktop py-24 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-bento-gap">
+<!-- Main Enquiry Form (Spans 8 columns) -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-xl p-8 md:p-12 bento-shadow border border-secondary/10">
+<h2 class="font-headline-md text-headline-md text-primary mb-8 border-b border-surface-container pb-4">Request a Wholesale Quote</h2>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Name -->
+<div class="relative">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="fullName">Full Name &amp; Designation</label>
+<input class="w-full minimal-input font-body-md text-body-md text-on-surface focus:ring-0" id="fullName" name="fullName" placeholder="Jane Doe, Procurement Manager" required="" type="text">
+</div>
+<!-- Company -->
+<div class="relative">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="companyName">Company Name &amp; GSTIN <span class="text-outline text-xs font-normal lowercase">(Optional)</span></label>
+<input class="w-full minimal-input font-body-md text-body-md text-on-surface focus:ring-0" id="companyName" name="companyName" placeholder="Acme Organics Pvt Ltd" type="text">
+</div>
+<!-- Email -->
+<div class="relative">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="email">Business Email</label>
+<input class="w-full minimal-input font-body-md text-body-md text-on-surface focus:ring-0" id="email" name="email" placeholder="jane@acmeorganics.com" required="" type="email">
+</div>
+<!-- Phone -->
+<div class="relative">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="phone">Phone Number</label>
+<input class="w-full minimal-input font-body-md text-body-md text-on-surface focus:ring-0" id="phone" name="phone" placeholder="+91 98765 43210" required="" type="tel">
+</div>
+</div>
+<!-- Business Type Dropdown -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="businessType">Business Type</label>
+<select class="w-full minimal-input font-body-md text-body-md text-on-surface focus:ring-0 bg-transparent py-2" id="businessType" name="businessType">
+<option disabled="" selected="" value="">Select primary business type</option>
+<option value="retailer">Retailer / Supermarket</option>
+<option value="distributor">Regional Distributor</option>
+<option value="exporter">Exporter</option>
+<option value="hospitality">Hospitality / HoReCa</option>
+<option value="other">Other</option>
+</select>
+</div>
+<!-- Product Interest (Checkboxes mimicking chips) -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-4">Product Interest</label>
+<div class="flex flex-wrap gap-3">
+<label class="cursor-pointer group">
+<input class="peer sr-only" name="interest" type="checkbox" value="millets">
+<span class="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-surface-container-low text-primary font-label-md text-label-md peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary-container transition-colors">
+                                        Premium Millets
+                                    </span>
+</label>
+<label class="cursor-pointer group">
+<input class="peer sr-only" name="interest" type="checkbox" value="seeds">
+<span class="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-surface-container-low text-primary font-label-md text-label-md peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary-container transition-colors">
+                                        Organic Seeds
+                                    </span>
+</label>
+<label class="cursor-pointer group">
+<input class="peer sr-only" name="interest" type="checkbox" value="birdfeed">
+<span class="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-surface-container-low text-primary font-label-md text-label-md peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary-container transition-colors">
+                                        Specialty Bird Feeds
+                                    </span>
+</label>
+<label class="cursor-pointer group">
+<input class="peer sr-only" name="interest" type="checkbox" value="spices">
+<span class="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-surface-container-low text-primary font-label-md text-label-md peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary-container transition-colors">
+                                        Heritage Spices
+                                    </span>
+</label>
+</div>
+</div>
+<!-- Volume -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="volume">Estimated Monthly Volume</label>
+<select class="w-full minimal-input font-body-md text-body-md text-on-surface focus:ring-0 bg-transparent py-2" id="volume" name="volume">
+<option disabled="" selected="" value="">Select anticipated volume</option>
+<option value="small">Less than 500 KG</option>
+<option value="medium">500 KG - 2 Tonnes</option>
+<option value="large">2 Tonnes - 10 Tonnes</option>
+<option value="enterprise">10+ Tonnes</option>
+</select>
+</div>
+<!-- Message -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="message">Specific Requirements</label>
+<textarea class="w-full minimal-input font-body-md text-body-md text-on-surface focus:ring-0 resize-none" id="message" name="message" placeholder="Please detail any specific blending requirements, packaging needs, or delivery schedules..." rows="4"></textarea>
+</div>
+<!-- Submit Button -->
+<div class="pt-4">
+<button class="w-full md:w-auto px-8 py-4 bg-primary text-secondary-container font-label-md text-label-md rounded-lg hover:bg-primary/90 transition-colors flex items-center justify-center gap-2" type="submit">
+                                Submit Enquiry
+                                <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Side Panel (Spans 4 columns) -->
+<div class="md:col-span-4 flex flex-col gap-bento-gap">
+<!-- Wholesale Benefits Bento -->
+<div class="bg-surface-container-low rounded-xl p-8 bento-shadow h-full">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-secondary filled">verified</span>
+<h3 class="font-headline-md text-headline-md text-primary">Wholesale Benefits</h3>
+</div>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex-shrink-0 flex items-center justify-center text-primary-container mt-1">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Priority Fulfillment</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Dedicated account managers ensure your bulk orders skip the queue.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex-shrink-0 flex items-center justify-center text-primary-container mt-1">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Volume-Based Pricing</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Transparent, tiered discounting structured to support your margins.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex-shrink-0 flex items-center justify-center text-primary-container mt-1">
+<span class="material-symbols-outlined text-[20px]">science</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Custom Blending</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Tailored nutritional profiles and seed mixes crafted in our labs.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex-shrink-0 flex items-center justify-center text-primary-container mt-1">
+<span class="material-symbols-outlined text-[20px]">description</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Export-Ready Docs</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Comprehensive compliance, phytosanitary, and origin certifications.</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- Contact Info Bento -->
+<div class="bg-primary text-on-primary rounded-xl p-8 bento-shadow relative overflow-hidden">
+<!-- Decorative element -->
+<div class="absolute -right-8 -bottom-8 w-32 h-32 rounded-full border-4 border-secondary/20 pointer-events-none"></div>
+<h3 class="font-headline-md text-headline-md mb-6">Direct Sales Team</h3>
+<div class="space-y-4 font-body-md text-body-md text-on-primary-container">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary-container flex-shrink-0">location_on</span>
+<p>Rithwik Industries<br>Industrial Estate, Kurnool<br>Andhra Pradesh, India</p>
+</div>
+<div class="flex items-center gap-3 pt-2">
+<span class="material-symbols-outlined text-secondary-container flex-shrink-0">forum</span>
+<p>WhatsApp: <span class="text-on-primary font-medium">+91 98765 43210</span></p>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container flex-shrink-0">mail</span>
+<p>sales@rithwikindustries.com</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-16 grid grid-cols-1 md:grid-cols-12 gap-bento-gap bg-primary dark:bg-primary-container mt-auto">
+<div class="md:col-span-4 flex flex-col justify-between">
+<div>
+<span class="font-headline-md text-headline-md text-primary-fixed dark:text-primary-fixed-dim block mb-4">Rithwik</span>
+<p class="font-body-md text-body-md text-on-primary-container dark:text-on-primary-container max-w-sm">Natural Purity, Nurtured for You. We bridge ancestral agricultural wisdom with modern scientific precision.</p>
+</div>
+<p class="font-label-md text-label-md text-on-primary-container dark:text-on-primary-container mt-8 md:mt-0">Â© 2024 Rithwik Industries. Natural Purity, Nurtured for You.</p>
+</div>
+<div class="md:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-3">
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200" href="about.html">About Kurnool Heritage</a>
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200" href="quality.html">Processing Standards</a>
+</div>
+<div class="flex flex-col gap-3">
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200" href="millets.html">Millet Varieties</a>
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200" href="products.html">Bird Feed Blends</a>
+</div>
+<div class="flex flex-col gap-3">
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Shipping Policy</a>
+<a class="font-label-md text-label-md text-primary-fixed dark:text-on-primary-fixed-variant hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200" href="wholesale.html">Contact Us</a>
+</div>
+</div>
+<div class="w-full text-center mt-10 pt-6 border-t border-primary-fixed/20"><p class="font-label-md text-label-md text-primary-fixed/60">A <a href="https://quantumpixel.duckdns.org" target="_blank" class="hover:text-secondary-container underline">quantumpixel.duckdns.org</a> product</p></div></footer>
+</body></html>
+
+
+
