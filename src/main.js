@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const storyImage = document.getElementById('story-image');
   
   if (storySteps.length > 0 && storyImage) {
-    const imgSources = ['./hero_bg.png', './millets_showcase.png', './seeds_superfoods.png'];
+    const imgSources = ['./hero_bg.webp', './millets_showcase.webp', './seeds_superfoods.webp'];
 
     ScrollTrigger.matchMedia({
       "(min-width: 993px)": function() {
