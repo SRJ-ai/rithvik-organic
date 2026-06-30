@@ -30,7 +30,7 @@ img, video, canvas, svg {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: clip;
   width: 100%;
 }
 
@@ -39,10 +39,9 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   line-height: 1.6;
-  overflow-x: hidden;
+  overflow-x: clip;
   width: 100%;
   position: relative;
-
 }
 
 a, button, input, select, textarea, .map-node-gsap, .btn {
