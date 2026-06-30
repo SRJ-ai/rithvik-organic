@@ -23,8 +23,15 @@
   box-sizing: border-box;
 }
 
+img, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+}
+
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -33,6 +40,8 @@ body {
   background-color: var(--color-bg);
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
+  position: relative;
   cursor: none;
 }
 
@@ -1576,6 +1585,9 @@ body.rtl .lang-switcher {
   }
   .category-content h3 {
     font-size: 1.6rem;
+  }
+  .table-panel {
+    padding: 20px 15px;
   }
   .product-list {
     grid-template-columns: 1fr;
