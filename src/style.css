@@ -458,7 +458,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 1s ease, visibility 1s ease;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
 #preloader.hidden {

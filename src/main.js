@@ -30,19 +30,19 @@ const i18n = {
 };
 
 // Cinematic Preloader & Hero Intro
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     const preloader = document.getElementById('preloader');
     if (preloader) {
       preloader.classList.add('hidden');
-      setTimeout(() => preloader.style.display = 'none', 1000);
+      setTimeout(() => preloader.style.display = 'none', 500);
       
       // Hero GSAP Intro Sequence
-      const heroTl = gsap.timeline({ delay: 0.2 });
-      heroTl.fromTo(".hero-badge", { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" })
-            .fromTo(".gsap-hero-line", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 1, stagger: 0.2, ease: "power4.out" }, "-=0.4");
+      const heroTl = gsap.timeline({ delay: 0.1 });
+      heroTl.fromTo(".hero-badge", { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" })
+            .fromTo(".gsap-hero-line", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8, stagger: 0.1, ease: "power4.out" }, "-=0.4");
     }
-  }, 1500); // 1.5 seconds cinematic wait
+  }, 50); // Instantly drop preloader after DOM is painted
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -365,7 +365,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Swap Text
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if(dict[key]) el.innerText = dict[key];
+        if(dict[key]) el.innerHTML = dict[key];
       });
       
       // Swap Placeholders
