@@ -124,10 +124,8 @@
     <section class="section global-reach" id="global-reach">
       <div class="container fade-in-scroll">
         <div class="map-container custom-map-container" style="position: relative; width: 100%; max-width: 1200px; margin: 0 auto; overflow: hidden; border-radius: 20px; aspect-ratio: 16/9; background: #0a0a0a;">
-          <svg viewBox="0 0 1600 900" class="gsap-world-map" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block;">
-            <!-- Embed image directly in SVG for perfect coordinate alignment across all screen sizes -->
-            <image href="./world_map_bg.png" x="0" y="0" width="1600" height="900" preserveAspectRatio="xMidYMid slice" style="opacity: 0.8; filter: contrast(1.1) brightness(0.8);" />
-            
+          <img src="./world_map_bg.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.8; filter: contrast(1.1) brightness(0.8); z-index: 1;" loading="lazy" alt="World Map Background">
+          <svg viewBox="0 0 1600 900" class="gsap-world-map" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; z-index: 2;">
             <!-- Trade Routes (will be drawn by GSAP) -->
             <!-- Kurnool (India) to Japan -->
             <path class="gsap-route" d="M1110,465 Q1250,300 1350,300" fill="none" stroke="rgba(212,175,55,1)" stroke-width="3" />
