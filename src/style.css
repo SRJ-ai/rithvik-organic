@@ -1551,6 +1551,12 @@ body.rtl .lang-switcher {
   .category-image {
     min-height: 300px;
   }
+  .enquiry-container {
+    grid-template-columns: 1fr;
+  }
+  .enquiry-info, .enquiry-form-wrapper {
+    padding: 40px 20px;
+  }
 }
 
 @media (max-width: 768px) {
