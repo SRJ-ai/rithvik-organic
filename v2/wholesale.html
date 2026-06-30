@@ -1,379 +1,328 @@
-﻿<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Wholesale &amp; Bulk Enquiry | Rithwik Industries</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "inverse-on-surface": "#f1f1ec",
-                        "on-primary-fixed-variant": "#2f4d39",
-                        "inverse-primary": "#adcfb4",
-                        "secondary-fixed-dim": "#e9c176",
-                        "on-primary-fixed": "#022110",
-                        "tertiary-container": "#444542",
-                        "surface-container": "#eeeee9",
-                        "primary": "#163422",
-                        "error": "#ba1a1a",
-                        "secondary-container": "#fed488",
-                        "surface-container-highest": "#e3e3de",
-                        "on-primary-container": "#99baa1",
-                        "outline-variant": "#c2c8c0",
-                        "on-primary": "#ffffff",
-                        "on-secondary-fixed-variant": "#5d4201",
-                        "on-error": "#ffffff",
-                        "secondary": "#775a19",
-                        "on-error-container": "#93000a",
-                        "surface-container-low": "#f4f4ee",
-                        "tertiary-fixed-dim": "#c8c6c3",
-                        "background": "#fafaf4",
-                        "surface": "#fafaf4",
-                        "on-secondary-container": "#785a1a",
-                        "on-secondary": "#ffffff",
-                        "primary-fixed": "#c8ebd0",
-                        "secondary-fixed": "#ffdea5",
-                        "inverse-surface": "#2f312e",
-                        "primary-container": "#2d4b37",
-                        "on-tertiary-fixed-variant": "#474744",
-                        "surface-bright": "#fafaf4",
-                        "on-tertiary-container": "#b3b2af",
-                        "on-secondary-fixed": "#261900",
-                        "on-background": "#1a1c19",
-                        "tertiary-fixed": "#e4e2de",
-                        "surface-container-lowest": "#ffffff",
-                        "on-tertiary-fixed": "#1b1c1a",
-                        "surface-variant": "#e3e3de",
-                        "on-surface": "#1a1c19",
-                        "tertiary": "#2e2f2c",
-                        "primary-fixed-dim": "#adcfb4",
-                        "outline": "#727972",
-                        "surface-dim": "#dadad5",
-                        "on-tertiary": "#ffffff",
-                        "error-container": "#ffdad6",
-                        "surface-tint": "#466550",
-                        "surface-container-high": "#e8e8e3",
-                        "on-surface-variant": "#424843"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "unit": "8px",
-                        "margin-mobile": "16px",
-                        "margin-desktop": "64px",
-                        "gutter": "24px",
-                        "bento-gap": "24px"
-                    },
-                    "fontFamily": {
-                        "label-md": ["Inter", "sans-serif"],
-                        "body-md": ["Inter", "sans-serif"],
-                        "body-lg": ["Inter", "sans-serif"],
-                        "display-lg": ["Playfair Display", "serif"],
-                        "headline-lg": ["Playfair Display", "serif"],
-                        "headline-md": ["Playfair Display", "serif"],
-                        "headline-lg-mobile": ["Playfair Display", "serif"]
-                    },
-                    "fontSize": {
-                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
-                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
-                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "600" }],
-                        "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
-                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "600" }]
-                    }
-                }
-            }
-        }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .material-symbols-outlined.filled {
-            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        
-        .bento-shadow {
-            box-shadow: 0 4px 30px rgba(45, 75, 55, 0.04);
-        }
-        
-        /* Form Input Styling */
-        .minimal-input {
-            border: none;
-            border-bottom: 1px solid theme('colors.secondary-fixed-dim');
-            border-radius: 0;
-            background: transparent;
-            padding-left: 0;
-            padding-right: 0;
-            transition: all 0.3s ease;
-        }
-        .minimal-input:focus {
-            outline: none;
-            box-shadow: none;
-            border-bottom-color: theme('colors.primary');
-            border-bottom-width: 2px;
-            background-color: rgba(233, 193, 118, 0.05); /* very light tint of gold on focus */
-        }
-    </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../rithwik_logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',sans-serif;background:#fafaf4;color:#1a1c19;overflow-x:hidden;line-height:1.6}
+    h1,h2,h3,h4,.serif{font-family:'Playfair Display',serif}
+    a{text-decoration:none}
+    img{display:block;max-width:100%}
+    .ms{font-family:'Material Symbols Outlined';font-style:normal;font-weight:normal;
+        font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;line-height:1;display:inline-block}
+    /* Buttons */
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:50px;font-size:14px;
+         font-weight:600;letter-spacing:.06em;text-transform:uppercase;transition:all .3s cubic-bezier(.16,1,.3,1);
+         cursor:pointer;border:none;font-family:'Inter',sans-serif;text-decoration:none}
+    .btn-green{background:#163422;color:#fff}.btn-green:hover{background:#2d4b37;transform:translateY(-2px);box-shadow:0 12px 28px -8px rgba(22,52,34,.4)}
+    .btn-gold{background:#775a19;color:#fff}.btn-gold:hover{background:#5d4214;transform:translateY(-2px);box-shadow:0 12px 28px -8px rgba(119,90,25,.5)}
+    .btn-outline{background:transparent;color:#163422;border:2px solid #163422}.btn-outline:hover{background:#163422;color:#fff;transform:translateY(-2px)}
+    .btn-outline-light{background:transparent;color:#c8ebd0;border:2px solid rgba(200,235,208,.4)}.btn-outline-light:hover{border-color:#e9c176;color:#e9c176}
+    .btn-sm{padding:10px 20px;font-size:12px}
+    /* Layout */
+    .container{max-width:1280px;margin:0 auto;padding:0 64px}
+    .section{padding:96px 0}
+    /* Cards */
+    .card{background:#fff;border-radius:20px;border:1px solid rgba(22,52,34,.07);overflow:hidden;
+          transition:all .5s cubic-bezier(.16,1,.3,1)}
+    .card:hover{transform:translateY(-6px);box-shadow:0 24px 48px -12px rgba(22,52,34,.12)}
+    /* Tags */
+    .tag{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;background:rgba(119,90,25,.1);
+         color:#775a19;border-radius:50px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    .tag-light{background:rgba(233,193,118,.15);color:#e9c176}
+    /* Reveal */
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+    .reveal.in{opacity:1;transform:none}
+    /* Divider accent */
+    .accent-line{width:48px;height:3px;background:linear-gradient(90deg,#775a19,#e9c176);border-radius:2px;margin:16px 0 28px}
+    /* Glass */
+    .glass{background:rgba(250,250,244,.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+    /* Form */
+    .form-group{margin-bottom:24px}
+    .form-label{display:block;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#424843;margin-bottom:8px}
+    .form-input{width:100%;padding:14px 18px;border:1.5px solid rgba(22,52,34,.15);border-radius:12px;
+                font-family:'Inter',sans-serif;font-size:15px;background:#fff;transition:all .2s;outline:none;color:#1a1c19}
+    .form-input:focus{border-color:#775a19;box-shadow:0 0 0 3px rgba(119,90,25,.1)}
+    textarea.form-input{resize:vertical;min-height:140px}
+    select.form-input{cursor:pointer}
+    /* Header */
+    #site-header{position:fixed;top:0;left:0;right:0;z-index:100;transition:all .3s}
+    #site-header.scrolled{padding-top:0;padding-bottom:0;box-shadow:0 2px 20px rgba(22,52,34,.08)}
+    #site-header .inner{max-width:1280px;margin:0 auto;padding:22px 64px;display:flex;justify-content:space-between;align-items:center}
+    #site-header.scrolled .inner{padding-top:14px;padding-bottom:14px}
+    #site-header .logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+    #site-header .logo img{width:40px;height:40px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(22,52,34,.2)}
+    #site-header .logo-name{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#163422}
+    #desktop-nav{display:flex;align-items:center;gap:32px}
+    #desktop-nav a{font-size:14px;font-weight:500;color:#424843;transition:color .2s;letter-spacing:.02em}
+    #desktop-nav a:hover,#desktop-nav a.active{color:#775a19}
+    #desktop-nav a.active{border-bottom:2px solid #775a19;padding-bottom:2px}
+    /* Mobile menu */
+    #menu-btn{display:none;background:none;border:none;cursor:pointer;color:#163422;padding:4px}
+    #mobile-menu{display:none;position:fixed;inset:0;z-index:200;background:#163422;padding:100px 32px 40px;flex-direction:column;gap:0}
+    #mobile-menu.open{display:flex}
+    #mobile-menu a{color:rgba(200,235,208,.85);font-family:'Playfair Display',serif;font-size:26px;font-weight:600;
+                   padding:16px 0;border-bottom:1px solid rgba(200,235,208,.12);transition:color .2s}
+    #mobile-menu a:hover{color:#e9c176}
+    #mobile-menu .close-btn{position:absolute;top:24px;right:24px;background:none;border:none;color:#c8ebd0;cursor:pointer;font-size:36px}
+    /* Page hero */
+    .page-hero{padding:160px 0 80px;background:linear-gradient(135deg,#163422 0%,#1e3d2b 100%);color:#c8ebd0;position:relative;overflow:hidden}
+    .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(233,193,118,.08),transparent 60%);pointer-events:none}
+    /* Toast */
+    #toast{position:fixed;bottom:32px;right:32px;background:#163422;color:#c8ebd0;padding:16px 24px;
+           border-radius:14px;font-size:14px;z-index:999;opacity:0;transform:translateY(20px);
+           transition:all .4s cubic-bezier(.16,1,.3,1);pointer-events:none;display:flex;align-items:center;gap:10px;
+           box-shadow:0 8px 24px rgba(22,52,34,.3)}
+    #toast.show{opacity:1;transform:none}
+    /* Footer */
+    .site-footer{background:#163422;color:#c8ebd0;padding:80px 0 40px}
+    .site-footer .inner{max-width:1280px;margin:0 auto;padding:0 64px}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:60px;margin-bottom:60px}
+    .footer-logo{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+    .footer-logo img{width:48px;height:48px;border-radius:50%;object-fit:cover}
+    .footer-logo span{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:#c8ebd0}
+    .footer-desc{font-size:14px;line-height:1.75;color:rgba(200,235,208,.65);max-width:280px;margin-bottom:24px}
+    .footer-map{border-radius:12px;overflow:hidden;border:1px solid rgba(200,235,208,.12)}
+    .footer-col-title{font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#e9c176;margin-bottom:20px}
+    .footer-links{display:flex;flex-direction:column;gap:12px}
+    .footer-links a{color:rgba(200,235,208,.75);font-size:14px;transition:color .2s}
+    .footer-links a:hover{color:#e9c176}
+    .footer-contact-item{display:flex;align-items:flex-start;gap:10px;color:rgba(200,235,208,.75);font-size:14px;line-height:1.5;margin-bottom:14px}
+    .footer-contact-item a{color:rgba(200,235,208,.75);transition:color .2s}.footer-contact-item a:hover{color:#e9c176}
+    .footer-bar{border-top:1px solid rgba(200,235,208,.12);padding-top:32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+    .footer-bar p{font-size:13px;color:rgba(200,235,208,.45)}
+    /* Responsive */
+    @media(max-width:900px){
+      .container{padding:0 20px}
+      #site-header .inner{padding:16px 20px}
+      #desktop-nav{display:none}
+      #menu-btn{display:block}
+      .footer-grid{grid-template-columns:1fr}
+      .site-footer .inner{padding:0 20px}
+      .section{padding:64px 0}
+    }
+  </style>
 </head>
-<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
-<!-- TopNavBar -->
-<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-full mx-auto bg-background/80 dark:bg-background/80 backdrop-blur-md">
-<div class="flex items-center gap-4">
-<a class="font-headline-md text-headline-md font-bold text-primary dark:text-on-primary-container tracking-tight" href="#">Rithwik</a>
-</div>
-<!-- Desktop Nav Links -->
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed" href="index.html">Organic Superfoods</a>
-<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed" href="products.html">Premium Bird Feeds</a>
-<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed" href="about.html">Our Heritage</a>
-<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed" href="quality.html">Sustainability</a>
-</nav>
-<div class="flex items-center gap-4 text-primary dark:text-primary-fixed-dim">
-<button aria-label="person" class="p-2 hover:opacity-80 transition-all rounded-full hover:bg-surface-variant">
-<span class="material-symbols-outlined">person</span>
-</button>
-<button aria-label="shopping_cart" class="p-2 hover:opacity-80 transition-all rounded-full hover:bg-surface-variant">
-<span class="material-symbols-outlined">shopping_cart</span>
-</button>
-<!-- Mobile Menu Toggle (Simplified) -->
-<button aria-label="menu" class="md:hidden p-2 text-primary">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
+<body><title>Wholesale &amp; Bulk Enquiry â€” Rithwik Industries</title>
+<meta name="description" content="Submit a wholesale or bulk order enquiry to Rithwik Industries. We respond within 24 hours.">
+</head><header id="site-header" class="glass">
+  <div class="inner">
+    <a href="index.html" class="logo">
+      <img src="../rithwik_logo.webp" alt="Rithwik Logo">
+      <span class="logo-name">Rithwik</span>
+    </a>
+    <nav id="desktop-nav">
+      <a href="index.html" data-page="index">Superfoods</a>
+      <a href="millets.html" data-page="millets">Millets</a>
+      <a href="products.html" data-page="products">Bird Feeds</a>
+      <a href="about.html" data-page="about">Our Heritage</a>
+      <a href="quality.html" data-page="quality">Quality</a>
+      <a href="wholesale.html" class="btn btn-gold btn-sm" data-page="wholesale">Get a Quote</a>
+    </nav>
+    <button id="menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('open')">
+      <span class="ms" style="font-size:28px">menu</span>
+    </button>
+  </div>
 </header>
-<!-- Main Content -->
-<main class="flex-grow pt-[80px]"> <!-- pt accommodates fixed header -->
-<!-- Hero Section -->
-<section class="relative w-full h-[409px] md:h-[512px] flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0 z-0" data-alt="A wide, sweeping, high-resolution cinematic shot of a pristine agricultural milling facility or golden wheat field at golden hour. The image features deep earthy greens and warm golden light, reflecting a premium, scientific yet natural aesthetic. The composition is clean, sophisticated, and perfectly suited as a luxurious background for a professional B2B wholesale portal. High contrast, minimalist styling." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAiOMYR1JMjbTc6QMrkRaHWfi5r1ETHmZ0F6a9r933CU92AcgckZN6fqK0SMaMSO08Dw_oIVCmhDX4SUZ6u1w1Kksic7T_U-aIQKMieH2iMtgAvNP7GufWM4eH059oBBIvPoRUbwYgSo8zCzH7M7QIkHVjbJ3xXHd8gHTcqv6tb6YU-6kZySEufsV9EvS9pqDm5xb0m0uuSGf4828s-eICvGAA38qQqZpwjKboIJjzyjnD27YzdjtRJDN0JP3dvHpL1_dtbftLjz0g')"></div>
-<div class="absolute inset-0 z-10 bg-primary/70"></div> <!-- Overlay for text readability -->
-<div class="relative z-20 text-center px-margin-mobile md:px-margin-desktop w-full max-w-5xl mx-auto">
-<span class="font-label-md text-label-md text-secondary-container uppercase tracking-widest mb-4 block">Partner With Us</span>
-<h1 class="font-display-lg text-display-lg md:text-[64px] text-on-primary mb-6 leading-tight">Bulk &amp; Wholesale Enquiries</h1>
-<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto">Scale your business with our premium, scientifically nurtured grains and feeds. Uncompromising quality for discerning partners.</p>
-</div>
+<div id="mobile-menu">
+  <button class="close-btn ms" onclick="document.getElementById('mobile-menu').classList.remove('open')">close</button>
+  <a href="index.html" onclick="this.closest('#mobile-menu').classList.remove('open')">Superfoods</a>
+  <a href="millets.html" onclick="this.closest('#mobile-menu').classList.remove('open')">Millets</a>
+  <a href="products.html" onclick="this.closest('#mobile-menu').classList.remove('open')">Bird Feeds</a>
+  <a href="about.html" onclick="this.closest('#mobile-menu').classList.remove('open')">Our Heritage</a>
+  <a href="quality.html" onclick="this.closest('#mobile-menu').classList.remove('open')">Quality</a>
+  <a href="wholesale.html" style="color:#e9c176" onclick="this.closest('#mobile-menu').classList.remove('open')">Get a Quote</a>
+</div><!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="reveal"><span class="tag tag-light">Wholesale &amp; Bulk</span></div>
+    <div class="accent-line reveal" style="background:linear-gradient(90deg,#e9c176,#fed488)"></div>
+    <h1 class="reveal" style="font-size:clamp(40px,5vw,68px);color:#c8ebd0;line-height:1.15;margin-bottom:20px">Bulk &amp; Wholesale<br><em style="color:#e9c176">Enquiries</em></h1>
+    <p class="reveal" style="font-size:17px;color:rgba(200,235,208,.7);max-width:480px;line-height:1.75">Interested in bulk orders, exports, or have a general query? Fill out the form and we will get back to you promptly.</p>
+  </div>
 </section>
-<!-- Bento Grid Layout for Content -->
-<section class="px-margin-mobile md:px-margin-desktop py-24 max-w-7xl mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-bento-gap">
-<!-- Main Enquiry Form (Spans 8 columns) -->
-<div class="md:col-span-8 bg-surface-container-lowest rounded-xl p-8 md:p-12 bento-shadow border border-secondary/10">
-<h2 class="font-headline-md text-headline-md text-primary mb-8 border-b border-surface-container pb-4">Request a Wholesale Quote</h2>
-<form class="space-y-8">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Name -->
-<div class="relative">
-<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="fullName">Full Name &amp; Designation</label>
-<input class="w-full minimal-input font-body-md text-body-md text-on-surface focus:ring-0" id="fullName" name="fullName" placeholder="Jane Doe, Procurement Manager" required="" type="text">
-</div>
-<!-- Company -->
-<div class="relative">
-<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="companyName">Company Name &amp; GSTIN <span class="text-outline text-xs font-normal lowercase">(Optional)</span></label>
-<input class="w-full minimal-input font-body-md text-body-md text-on-surface focus:ring-0" id="companyName" name="companyName" placeholder="Acme Organics Pvt Ltd" type="text">
-</div>
-<!-- Email -->
-<div class="relative">
-<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="email">Business Email</label>
-<input class="w-full minimal-input font-body-md text-body-md text-on-surface focus:ring-0" id="email" name="email" placeholder="jane@acmeorganics.com" required="" type="email">
-</div>
-<!-- Phone -->
-<div class="relative">
-<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="phone">Phone Number</label>
-<input class="w-full minimal-input font-body-md text-body-md text-on-surface focus:ring-0" id="phone" name="phone" placeholder="+91 98765 43210" required="" type="tel">
-</div>
-</div>
-<!-- Business Type Dropdown -->
-<div>
-<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="businessType">Business Type</label>
-<select class="w-full minimal-input font-body-md text-body-md text-on-surface focus:ring-0 bg-transparent py-2" id="businessType" name="businessType">
-<option disabled="" selected="" value="">Select primary business type</option>
-<option value="retailer">Retailer / Supermarket</option>
-<option value="distributor">Regional Distributor</option>
-<option value="exporter">Exporter</option>
-<option value="hospitality">Hospitality / HoReCa</option>
-<option value="other">Other</option>
-</select>
-</div>
-<!-- Product Interest (Checkboxes mimicking chips) -->
-<div>
-<label class="block font-label-md text-label-md text-on-surface-variant mb-4">Product Interest</label>
-<div class="flex flex-wrap gap-3">
-<label class="cursor-pointer group">
-<input class="peer sr-only" name="interest" type="checkbox" value="millets">
-<span class="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-surface-container-low text-primary font-label-md text-label-md peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary-container transition-colors">
-                                        Premium Millets
-                                    </span>
-</label>
-<label class="cursor-pointer group">
-<input class="peer sr-only" name="interest" type="checkbox" value="seeds">
-<span class="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-surface-container-low text-primary font-label-md text-label-md peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary-container transition-colors">
-                                        Organic Seeds
-                                    </span>
-</label>
-<label class="cursor-pointer group">
-<input class="peer sr-only" name="interest" type="checkbox" value="birdfeed">
-<span class="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-surface-container-low text-primary font-label-md text-label-md peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary-container transition-colors">
-                                        Specialty Bird Feeds
-                                    </span>
-</label>
-<label class="cursor-pointer group">
-<input class="peer sr-only" name="interest" type="checkbox" value="spices">
-<span class="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-surface-container-low text-primary font-label-md text-label-md peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary-container transition-colors">
-                                        Heritage Spices
-                                    </span>
-</label>
-</div>
-</div>
-<!-- Volume -->
-<div>
-<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="volume">Estimated Monthly Volume</label>
-<select class="w-full minimal-input font-body-md text-body-md text-on-surface focus:ring-0 bg-transparent py-2" id="volume" name="volume">
-<option disabled="" selected="" value="">Select anticipated volume</option>
-<option value="small">Less than 500 KG</option>
-<option value="medium">500 KG - 2 Tonnes</option>
-<option value="large">2 Tonnes - 10 Tonnes</option>
-<option value="enterprise">10+ Tonnes</option>
-</select>
-</div>
-<!-- Message -->
-<div>
-<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="message">Specific Requirements</label>
-<textarea class="w-full minimal-input font-body-md text-body-md text-on-surface focus:ring-0 resize-none" id="message" name="message" placeholder="Please detail any specific blending requirements, packaging needs, or delivery schedules..." rows="4"></textarea>
-</div>
-<!-- Submit Button -->
-<div class="pt-4">
-<button class="w-full md:w-auto px-8 py-4 bg-primary text-secondary-container font-label-md text-label-md rounded-lg hover:bg-primary/90 transition-colors flex items-center justify-center gap-2" type="submit">
-                                Submit Enquiry
-                                <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
-</button>
-</div>
-</form>
-</div>
-<!-- Side Panel (Spans 4 columns) -->
-<div class="md:col-span-4 flex flex-col gap-bento-gap">
-<!-- Wholesale Benefits Bento -->
-<div class="bg-surface-container-low rounded-xl p-8 bento-shadow h-full">
-<div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-secondary filled">verified</span>
-<h3 class="font-headline-md text-headline-md text-primary">Wholesale Benefits</h3>
-</div>
-<ul class="space-y-6">
-<li class="flex gap-4">
-<div class="w-10 h-10 rounded-full bg-primary-fixed flex-shrink-0 flex items-center justify-center text-primary-container mt-1">
-<span class="material-symbols-outlined text-[20px]">local_shipping</span>
-</div>
-<div>
-<h4 class="font-label-md text-label-md text-on-surface mb-1">Priority Fulfillment</h4>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm">Dedicated account managers ensure your bulk orders skip the queue.</p>
-</div>
-</li>
-<li class="flex gap-4">
-<div class="w-10 h-10 rounded-full bg-primary-fixed flex-shrink-0 flex items-center justify-center text-primary-container mt-1">
-<span class="material-symbols-outlined text-[20px]">payments</span>
-</div>
-<div>
-<h4 class="font-label-md text-label-md text-on-surface mb-1">Volume-Based Pricing</h4>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm">Transparent, tiered discounting structured to support your margins.</p>
-</div>
-</li>
-<li class="flex gap-4">
-<div class="w-10 h-10 rounded-full bg-primary-fixed flex-shrink-0 flex items-center justify-center text-primary-container mt-1">
-<span class="material-symbols-outlined text-[20px]">science</span>
-</div>
-<div>
-<h4 class="font-label-md text-label-md text-on-surface mb-1">Custom Blending</h4>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm">Tailored nutritional profiles and seed mixes crafted in our labs.</p>
-</div>
-</li>
-<li class="flex gap-4">
-<div class="w-10 h-10 rounded-full bg-primary-fixed flex-shrink-0 flex items-center justify-center text-primary-container mt-1">
-<span class="material-symbols-outlined text-[20px]">description</span>
-</div>
-<div>
-<h4 class="font-label-md text-label-md text-on-surface mb-1">Export-Ready Docs</h4>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm">Comprehensive compliance, phytosanitary, and origin certifications.</p>
-</div>
-</li>
-</ul>
-</div>
-<!-- Contact Info Bento -->
-<div class="bg-primary text-on-primary rounded-xl p-8 bento-shadow relative overflow-hidden">
-<!-- Decorative element -->
-<div class="absolute -right-8 -bottom-8 w-32 h-32 rounded-full border-4 border-secondary/20 pointer-events-none"></div>
-<h3 class="font-headline-md text-headline-md mb-6">Direct Sales Team</h3>
-<div class="space-y-4 font-body-md text-body-md text-on-primary-container">
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary-container flex-shrink-0">location_on</span>
-<p>Rithwik Industries<br>Industrial Estate, Kurnool<br>Andhra Pradesh, India</p>
-</div>
-<div class="flex items-center gap-3 pt-2">
-<span class="material-symbols-outlined text-secondary-container flex-shrink-0">forum</span>
-<p>WhatsApp: <span class="text-on-primary font-medium">+91 98765 43210</span></p>
-</div>
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-secondary-container flex-shrink-0">mail</span>
-<p>sales@rithwikindustries.com</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+
+<!-- FORM + INFO -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1.3fr;gap:80px;align-items:start">
+      <!-- Info -->
+      <div class="reveal">
+        <h2 style="font-size:36px;color:#163422;margin-bottom:20px">Get in Touch</h2>
+        <p style="font-size:15px;color:#424843;line-height:1.75;margin-bottom:40px">We work with wholesalers, importers, and distributors globally. Our team ensures competitive pricing, reliable quality, and timely delivery.</p>
+        <div style="display:flex;flex-direction:column;gap:24px;margin-bottom:40px">
+          <div style="display:flex;align-items:center;gap:16px">
+            <div style="width:48px;height:48px;border-radius:50%;background:rgba(119,90,25,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0"><span class="ms" style="color:#775a19;font-size:24px">mail</span></div>
+            <div><p style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#775a19;margin-bottom:4px">Email</p><a href="mailto:rithwikindustries@gmail.com" style="font-size:15px;color:#163422">rithwikindustries@gmail.com</a></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:16px">
+            <div style="width:48px;height:48px;border-radius:50%;background:rgba(119,90,25,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0"><span class="ms" style="color:#775a19;font-size:24px">call</span></div>
+            <div><p style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#775a19;margin-bottom:4px">Phone</p><a href="tel:+918309782770" style="font-size:15px;color:#163422">+91 8309782770</a></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:16px">
+            <div style="width:48px;height:48px;border-radius:50%;background:rgba(119,90,25,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:4px"><span class="ms" style="color:#775a19;font-size:24px">location_on</span></div>
+            <div><p style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#775a19;margin-bottom:4px">Office</p><p style="font-size:15px;color:#163422;line-height:1.6">87/1404, Near Nandyal Checkpost,<br>Kurnool, Andhra Pradesh 518002</p></div>
+          </div>
+        </div>
+        <div style="background:#f4f4ee;border-radius:16px;padding:24px">
+          <p style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#775a19;margin-bottom:8px">GSTIN</p>
+          <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:#163422;letter-spacing:.06em">37ABKFR7391G1ZM</p>
+        </div>
+      </div>
+      <!-- Form -->
+      <div class="card reveal" style="padding:48px">
+        <h3 style="font-size:28px;color:#163422;margin-bottom:32px">Send Your Enquiry</h3>
+        <form id="enquiry-form" onsubmit="handleSubmit(event)">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+            <div class="form-group">
+              <label class="form-label" for="name">Full Name *</label>
+              <input class="form-input" type="text" id="name" name="name" required placeholder="John Smith">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="company">Company Name</label>
+              <input class="form-input" type="text" id="company" name="company" placeholder="Your Company Ltd.">
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address *</label>
+              <input class="form-input" type="email" id="email" name="email" required placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="+1 234 567 8900">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="country">Country</label>
+            <select class="form-input" id="country" name="country">
+              <option value="">Select your country</option>
+              <option>United States</option><option>United Kingdom</option><option>Germany</option>
+              <option>Australia</option><option>Canada</option><option>UAE</option><option>Singapore</option>
+              <option>Japan</option><option>India</option><option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="product">Product Interest *</label>
+            <select class="form-input" id="product" name="product" required>
+              <option value="">Select a product category</option>
+              <option>Premium Millets (Foxtail, Kodo, Proso, etc.)</option>
+              <option>Organic Seeds (Pumpkin, Sunflower, Flax, etc.)</option>
+              <option>Bird Feed Blends</option>
+              <option>Spices &amp; Nuts</option>
+              <option>Mixed / Multiple Categories</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="quantity">Estimated Quantity</label>
+            <select class="form-input" id="quantity" name="quantity">
+              <option value="">Select quantity range</option>
+              <option>Under 1 MT</option><option>1 - 5 MT</option><option>5 - 20 MT</option>
+              <option>20 - 100 MT</option><option>100+ MT</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-input" id="message" name="message" placeholder="Tell us about your requirements, specific varieties, packaging preferences, or any questions..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-green" id="submit-btn" style="width:100%;justify-content:center;font-size:15px;padding:16px">
+            <span id="btn-text"><span class="ms">send</span> Send Enquiry</span>
+            <span id="btn-loading" style="display:none"><span class="ms" style="animation:spin .8s linear infinite">progress_activity</span> Sending...</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
-</main>
-<!-- Footer -->
-<footer class="w-full px-margin-mobile md:px-margin-desktop py-20 grid grid-cols-1 md:grid-cols-12 gap-12 bg-primary text-on-primary border-t-4 border-secondary">
-<div class="md:col-span-4 flex flex-col gap-6">
-<h2 class="font-headline-lg text-4xl text-primary-fixed mb-2 flex items-center gap-3"><img src="../rithwik_logo.webp" alt="Rithwik Logo" class="w-10 h-10 rounded-full"> Rithwik</h2>
-<p class="font-body-md text-body-md text-on-primary-container max-w-sm leading-relaxed">
-            Nature's Grain, Nurtured for You. Premium organic superfoods and scientifically formulated bird feeds from the heart of Andhra Pradesh.
-        </p>
-<div class="mt-4 w-full max-w-sm rounded-xl overflow-hidden shadow-sm opacity-90 hover:opacity-100 transition-opacity bg-primary-container/20">
-  <iframe src="https://maps.google.com/maps?q=Nandyal%20Checkpost,%20Kurnool,%20Andhra%20Pradesh&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-</div>
-</div>
-<div class="md:col-span-2 md:col-start-7 flex flex-col gap-5">
-<h3 class="font-label-md text-label-md text-secondary-container tracking-[0.15em] uppercase mb-4">Company</h3>
-<a class="font-body-md text-body-md text-primary-fixed/90 hover:text-secondary-container hover:translate-x-1 transition-all duration-300 inline-block" href="about.html">About Kurnool Heritage</a>
-<a class="font-body-md text-body-md text-primary-fixed/90 hover:text-secondary-container hover:translate-x-1 transition-all duration-300 inline-block" href="quality.html">Processing Standards</a>
-<a class="font-body-md text-body-md text-primary-fixed/90 hover:text-secondary-container hover:translate-x-1 transition-all duration-300 inline-block" href="wholesale.html">Contact Us</a>
-</div>
-<div class="md:col-span-2 flex flex-col gap-5">
-<h3 class="font-label-md text-label-md text-secondary-container tracking-[0.15em] uppercase mb-4">Products</h3>
-<a class="font-body-md text-body-md text-primary-fixed/90 hover:text-secondary-container hover:translate-x-1 transition-all duration-300 inline-block" href="millets.html">Millet Varieties</a>
-<a class="font-body-md text-body-md text-primary-fixed/90 hover:text-secondary-container hover:translate-x-1 transition-all duration-300 inline-block" href="products.html">Bird Feed Blends</a>
-<a class="font-body-md text-body-md text-primary-fixed/90 hover:text-secondary-container hover:translate-x-1 transition-all duration-300 inline-block" href="#">Shipping Policy</a>
-</div>
-<div class="md:col-span-2 flex flex-col gap-5">
-<h3 class="font-label-md text-label-md text-secondary-container tracking-[0.15em] uppercase mb-4">Contact</h3>
-<p class="font-body-md text-body-md text-primary-fixed/90 flex items-center gap-3"><span class="material-symbols-outlined text-secondary-container">mail</span> rithwikindustries@gmail.com</p>
-<p class="font-body-md text-body-md text-primary-fixed/90 flex items-center gap-3"><span class="material-symbols-outlined text-secondary-container">call</span> 8828282823</p>
-<p class="font-body-md text-body-md text-primary-fixed/90 flex items-start gap-3 mt-2"><span class="material-symbols-outlined text-secondary-container">location_on</span> 87/1404, Near Nandyal Checkpost, Kurnool</p>
-</div>
-<div class="col-span-1 md:col-span-12 flex flex-col md:flex-row justify-between items-center w-full mt-10 pt-6 border-t border-primary-fixed/20 gap-4">
-    <p class="font-label-md text-label-md text-primary-fixed/60">
-        &copy; 2026 Rithwik Industries. Natural Purity, Nurtured for You.
-    </p>
-    <p class="font-label-md text-label-md text-primary-fixed/60 flex items-center gap-2">
-        A <a href="https://quantumpixel.duckdns.org" target="_blank" class="text-secondary-container hover:text-secondary font-bold underline transition-colors">QuantumPixel</a> product
-    </p>
-</div>
+<style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+<script>
+function handleSubmit(e){
+  e.preventDefault();
+  const btn=document.getElementById('submit-btn');
+  const name=document.getElementById('name').value;
+  document.getElementById('btn-text').style.display='none';
+  document.getElementById('btn-loading').style.display='flex';
+  btn.disabled=true;
+  setTimeout(()=>{
+    btn.disabled=false;
+    document.getElementById('btn-text').style.display='flex';
+    document.getElementById('btn-loading').style.display='none';
+    document.getElementById('enquiry-form').reset();
+    showToast('Enquiry sent! We will contact you within 24 hours.');
+  },1800);
+}
+</script><footer class="site-footer">
+  <div class="inner">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">
+          <img src="../rithwik_logo.webp" alt="Rithwik Logo">
+          <span>Rithwik</span>
+        </a>
+        <p class="footer-desc">Nature's Grain, Nurtured for You. Premium organic superfoods and bird feeds from the heart of Andhra Pradesh, India.</p>
+        <div class="footer-map">
+          <iframe src="https://maps.google.com/maps?q=Nandyal+Checkpost,+Kurnool,+Andhra+Pradesh&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="180" style="border:0;display:block" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Company</p>
+        <div class="footer-links">
+          <a href="about.html">Our Heritage</a>
+          <a href="quality.html">Quality Standards</a>
+          <a href="wholesale.html">Wholesale</a>
+          <a href="../index.html">Classic Site</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Products</p>
+        <div class="footer-links">
+          <a href="millets.html">Premium Millets</a>
+          <a href="products.html">Bird Feed Blends</a>
+          <a href="index.html">Organic Seeds</a>
+          <a href="wholesale.html">Bulk Orders</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <div class="footer-contact-item"><span class="ms" style="color:#e9c176;font-size:20px;flex-shrink:0">mail</span><a href="mailto:rithwikindustries@gmail.com">rithwikindustries@gmail.com</a></div>
+        <div class="footer-contact-item"><span class="ms" style="color:#e9c176;font-size:20px;flex-shrink:0">call</span><a href="tel:+918309782770">+91 8309782770</a></div>
+        <div class="footer-contact-item"><span class="ms" style="color:#e9c176;font-size:20px;flex-shrink:0;margin-top:2px">location_on</span><span>87/1404, Near Nandyal Checkpost, Kurnool, AP 518002</span></div>
+        <a href="wholesale.html" class="btn btn-gold btn-sm" style="margin-top:12px">Send Enquiry</a>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <p>&copy; 2026 Rithwik Industries. All Rights Reserved.</p>
+      <p>A <a href="https://quantumpixel.duckdns.org" target="_blank" style="color:#e9c176;font-weight:600" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">QuantumPixel</a> product</p>
+    </div>
+  </div>
 </footer>
+<div id="toast"><span class="ms">check_circle</span><span id="toast-msg">Done!</span></div>
+<script>
+// Reveal on scroll
+const rio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');rio.unobserve(e.target)}}),{threshold:.08,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>rio.observe(el));
+// Header scroll
+window.addEventListener('scroll',()=>document.getElementById('site-header').classList.toggle('scrolled',scrollY>40),{passive:true});
+// Active nav link
+const pg=location.pathname.split('/').pop().replace('.html','')||'index';
+document.querySelectorAll('[data-page]').forEach(a=>{if(a.dataset.page===pg)a.classList.add('active')});
+// Toast
+function showToast(msg,icon='check_circle'){
+  const t=document.getElementById('toast');
+  document.getElementById('toast-msg').textContent=msg;
+  t.querySelector('.ms').textContent=icon;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),3200);
+}
+// Mobile menu responsive
+const mq=matchMedia('(max-width:900px)');
+const applyMQ=()=>{document.getElementById('menu-btn').style.display=mq.matches?'block':'none'};
+applyMQ();mq.addListener(applyMQ);
+</script>
 </body></html>
-
-
-
-
-

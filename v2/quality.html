@@ -1,314 +1,303 @@
-﻿<!DOCTYPE html><html lang="en"><head>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Quality Assurance - Rithwik Industries</title>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "inverse-on-surface": "#f1f1ec",
-                        "surface-dim": "#dadad5",
-                        "secondary": "#775a19",
-                        "tertiary-fixed": "#e4e2de",
-                        "surface-container-high": "#e8e8e3",
-                        "on-error": "#ffffff",
-                        "on-secondary-container": "#785a1a",
-                        "primary-fixed": "#c8ebd0",
-                        "surface-bright": "#fafaf4",
-                        "surface-container": "#eeeee9",
-                        "on-tertiary-container": "#b3b2af",
-                        "inverse-surface": "#2f312e",
-                        "secondary-container": "#fed488",
-                        "error": "#ba1a1a",
-                        "tertiary": "#2e2f2c",
-                        "outline": "#727972",
-                        "surface-container-highest": "#e3e3de",
-                        "on-tertiary": "#ffffff",
-                        "on-tertiary-fixed-variant": "#474744",
-                        "on-secondary-fixed-variant": "#5d4201",
-                        "surface": "#fafaf4",
-                        "tertiary-fixed-dim": "#c8c6c3",
-                        "on-error-container": "#93000a",
-                        "primary-container": "#2d4b37",
-                        "secondary-fixed-dim": "#e9c176",
-                        "tertiary-container": "#444542",
-                        "on-primary-container": "#99baa1",
-                        "background": "#fafaf4",
-                        "secondary-fixed": "#ffdea5",
-                        "surface-container-lowest": "#ffffff",
-                        "on-tertiary-fixed": "#1b1c1a",
-                        "on-secondary": "#ffffff",
-                        "on-surface-variant": "#424843",
-                        "on-primary": "#ffffff",
-                        "surface-variant": "#e3e3de",
-                        "primary-fixed-dim": "#adcfb4",
-                        "on-primary-fixed": "#022110",
-                        "inverse-primary": "#adcfb4",
-                        "surface-tint": "#466550",
-                        "on-background": "#1a1c19",
-                        "on-surface": "#1a1c19",
-                        "surface-container-low": "#f4f4ee",
-                        "outline-variant": "#c2c8c0",
-                        "error-container": "#ffdad6",
-                        "on-primary-fixed-variant": "#2f4d39",
-                        "primary": "#163422",
-                        "on-secondary-fixed": "#261900"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "unit": "8px",
-                        "margin-mobile": "16px",
-                        "gutter": "24px",
-                        "bento-gap": "24px",
-                        "margin-desktop": "64px"
-                    },
-                    "fontFamily": {
-                        "body-md": [
-                            "Inter"
-                        ],
-                        "headline-lg-mobile": [
-                            "Playfair Display"
-                        ],
-                        "body-lg": [
-                            "Inter"
-                        ],
-                        "label-md": [
-                            "Inter"
-                        ],
-                        "headline-md": [
-                            "Playfair Display"
-                        ],
-                        "headline-lg": [
-                            "Playfair Display"
-                        ],
-                        "display-lg": [
-                            "Playfair Display"
-                        ]
-                    },
-                    "fontSize": {
-                        "body-md": [
-                            "16px",
-                            {
-                                "lineHeight": "24px",
-                                "fontWeight": "400"
-                            }
-                        ],
-                        "headline-lg-mobile": [
-                            "32px",
-                            {
-                                "lineHeight": "40px",
-                                "fontWeight": "600"
-                            }
-                        ],
-                        "body-lg": [
-                            "18px",
-                            {
-                                "lineHeight": "28px",
-                                "fontWeight": "400"
-                            }
-                        ],
-                        "label-md": [
-                            "14px",
-                            {
-                                "lineHeight": "20px",
-                                "letterSpacing": "0.05em",
-                                "fontWeight": "600"
-                            }
-                        ],
-                        "headline-md": [
-                            "28px",
-                            {
-                                "lineHeight": "36px",
-                                "fontWeight": "600"
-                            }
-                        ],
-                        "headline-lg": [
-                            "40px",
-                            {
-                                "lineHeight": "48px",
-                                "fontWeight": "600"
-                            }
-                        ],
-                        "display-lg": [
-                            "64px",
-                            {
-                                "lineHeight": "72px",
-                                "letterSpacing": "-0.02em",
-                                "fontWeight": "700"
-                            }
-                        ]
-                    }
-                }
-            }
-        }
-    </script>
-<style>
-        .glass-card {
-            background: rgba(253, 251, 247, 0.7);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(197, 160, 89, 0.2);
-            box-shadow: 0 8px 30px rgba(45, 75, 55, 0.04);
-        }
-        .soft-shadow {
-            box-shadow: 0 10px 40px rgba(45, 75, 55, 0.05);
-        }
-    </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../rithwik_logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',sans-serif;background:#fafaf4;color:#1a1c19;overflow-x:hidden;line-height:1.6}
+    h1,h2,h3,h4,.serif{font-family:'Playfair Display',serif}
+    a{text-decoration:none}
+    img{display:block;max-width:100%}
+    .ms{font-family:'Material Symbols Outlined';font-style:normal;font-weight:normal;
+        font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;line-height:1;display:inline-block}
+    /* Buttons */
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:50px;font-size:14px;
+         font-weight:600;letter-spacing:.06em;text-transform:uppercase;transition:all .3s cubic-bezier(.16,1,.3,1);
+         cursor:pointer;border:none;font-family:'Inter',sans-serif;text-decoration:none}
+    .btn-green{background:#163422;color:#fff}.btn-green:hover{background:#2d4b37;transform:translateY(-2px);box-shadow:0 12px 28px -8px rgba(22,52,34,.4)}
+    .btn-gold{background:#775a19;color:#fff}.btn-gold:hover{background:#5d4214;transform:translateY(-2px);box-shadow:0 12px 28px -8px rgba(119,90,25,.5)}
+    .btn-outline{background:transparent;color:#163422;border:2px solid #163422}.btn-outline:hover{background:#163422;color:#fff;transform:translateY(-2px)}
+    .btn-outline-light{background:transparent;color:#c8ebd0;border:2px solid rgba(200,235,208,.4)}.btn-outline-light:hover{border-color:#e9c176;color:#e9c176}
+    .btn-sm{padding:10px 20px;font-size:12px}
+    /* Layout */
+    .container{max-width:1280px;margin:0 auto;padding:0 64px}
+    .section{padding:96px 0}
+    /* Cards */
+    .card{background:#fff;border-radius:20px;border:1px solid rgba(22,52,34,.07);overflow:hidden;
+          transition:all .5s cubic-bezier(.16,1,.3,1)}
+    .card:hover{transform:translateY(-6px);box-shadow:0 24px 48px -12px rgba(22,52,34,.12)}
+    /* Tags */
+    .tag{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;background:rgba(119,90,25,.1);
+         color:#775a19;border-radius:50px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    .tag-light{background:rgba(233,193,118,.15);color:#e9c176}
+    /* Reveal */
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+    .reveal.in{opacity:1;transform:none}
+    /* Divider accent */
+    .accent-line{width:48px;height:3px;background:linear-gradient(90deg,#775a19,#e9c176);border-radius:2px;margin:16px 0 28px}
+    /* Glass */
+    .glass{background:rgba(250,250,244,.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+    /* Form */
+    .form-group{margin-bottom:24px}
+    .form-label{display:block;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#424843;margin-bottom:8px}
+    .form-input{width:100%;padding:14px 18px;border:1.5px solid rgba(22,52,34,.15);border-radius:12px;
+                font-family:'Inter',sans-serif;font-size:15px;background:#fff;transition:all .2s;outline:none;color:#1a1c19}
+    .form-input:focus{border-color:#775a19;box-shadow:0 0 0 3px rgba(119,90,25,.1)}
+    textarea.form-input{resize:vertical;min-height:140px}
+    select.form-input{cursor:pointer}
+    /* Header */
+    #site-header{position:fixed;top:0;left:0;right:0;z-index:100;transition:all .3s}
+    #site-header.scrolled{padding-top:0;padding-bottom:0;box-shadow:0 2px 20px rgba(22,52,34,.08)}
+    #site-header .inner{max-width:1280px;margin:0 auto;padding:22px 64px;display:flex;justify-content:space-between;align-items:center}
+    #site-header.scrolled .inner{padding-top:14px;padding-bottom:14px}
+    #site-header .logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+    #site-header .logo img{width:40px;height:40px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(22,52,34,.2)}
+    #site-header .logo-name{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#163422}
+    #desktop-nav{display:flex;align-items:center;gap:32px}
+    #desktop-nav a{font-size:14px;font-weight:500;color:#424843;transition:color .2s;letter-spacing:.02em}
+    #desktop-nav a:hover,#desktop-nav a.active{color:#775a19}
+    #desktop-nav a.active{border-bottom:2px solid #775a19;padding-bottom:2px}
+    /* Mobile menu */
+    #menu-btn{display:none;background:none;border:none;cursor:pointer;color:#163422;padding:4px}
+    #mobile-menu{display:none;position:fixed;inset:0;z-index:200;background:#163422;padding:100px 32px 40px;flex-direction:column;gap:0}
+    #mobile-menu.open{display:flex}
+    #mobile-menu a{color:rgba(200,235,208,.85);font-family:'Playfair Display',serif;font-size:26px;font-weight:600;
+                   padding:16px 0;border-bottom:1px solid rgba(200,235,208,.12);transition:color .2s}
+    #mobile-menu a:hover{color:#e9c176}
+    #mobile-menu .close-btn{position:absolute;top:24px;right:24px;background:none;border:none;color:#c8ebd0;cursor:pointer;font-size:36px}
+    /* Page hero */
+    .page-hero{padding:160px 0 80px;background:linear-gradient(135deg,#163422 0%,#1e3d2b 100%);color:#c8ebd0;position:relative;overflow:hidden}
+    .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(233,193,118,.08),transparent 60%);pointer-events:none}
+    /* Toast */
+    #toast{position:fixed;bottom:32px;right:32px;background:#163422;color:#c8ebd0;padding:16px 24px;
+           border-radius:14px;font-size:14px;z-index:999;opacity:0;transform:translateY(20px);
+           transition:all .4s cubic-bezier(.16,1,.3,1);pointer-events:none;display:flex;align-items:center;gap:10px;
+           box-shadow:0 8px 24px rgba(22,52,34,.3)}
+    #toast.show{opacity:1;transform:none}
+    /* Footer */
+    .site-footer{background:#163422;color:#c8ebd0;padding:80px 0 40px}
+    .site-footer .inner{max-width:1280px;margin:0 auto;padding:0 64px}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:60px;margin-bottom:60px}
+    .footer-logo{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+    .footer-logo img{width:48px;height:48px;border-radius:50%;object-fit:cover}
+    .footer-logo span{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:#c8ebd0}
+    .footer-desc{font-size:14px;line-height:1.75;color:rgba(200,235,208,.65);max-width:280px;margin-bottom:24px}
+    .footer-map{border-radius:12px;overflow:hidden;border:1px solid rgba(200,235,208,.12)}
+    .footer-col-title{font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#e9c176;margin-bottom:20px}
+    .footer-links{display:flex;flex-direction:column;gap:12px}
+    .footer-links a{color:rgba(200,235,208,.75);font-size:14px;transition:color .2s}
+    .footer-links a:hover{color:#e9c176}
+    .footer-contact-item{display:flex;align-items:flex-start;gap:10px;color:rgba(200,235,208,.75);font-size:14px;line-height:1.5;margin-bottom:14px}
+    .footer-contact-item a{color:rgba(200,235,208,.75);transition:color .2s}.footer-contact-item a:hover{color:#e9c176}
+    .footer-bar{border-top:1px solid rgba(200,235,208,.12);padding-top:32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+    .footer-bar p{font-size:13px;color:rgba(200,235,208,.45)}
+    /* Responsive */
+    @media(max-width:900px){
+      .container{padding:0 20px}
+      #site-header .inner{padding:16px 20px}
+      #desktop-nav{display:none}
+      #menu-btn{display:block}
+      .footer-grid{grid-template-columns:1fr}
+      .site-footer .inner{padding:0 20px}
+      .section{padding:64px 0}
+    }
+  </style>
 </head>
-<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col">
-<!-- TopNavBar -->
-<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-full mx-auto bg-background/80 dark:bg-background/80 backdrop-blur-md">
-<a class="font-headline-md text-headline-md font-bold text-primary dark:text-on-primary-container" href="#">Rithwik</a>
-<nav class="hidden md:flex space-x-gutter">
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="index.html">Organic Superfoods</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="products.html">Premium Bird Feeds</a>
-<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim border-b-2 border-secondary dark:border-secondary-fixed-dim pb-1 hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="about.html">Our Heritage</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="quality.html">Sustainability</a>
-</nav>
-<div class="flex items-center space-x-unit">
-<button class="p-2 text-primary dark:text-primary-fixed-dim hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300 focus:opacity-80 focus:scale-95 transition-all">
-<span class="material-symbols-outlined" data-icon="person">person</span>
-</button>
-<button class="p-2 text-primary dark:text-primary-fixed-dim hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300 focus:opacity-80 focus:scale-95 transition-all">
-<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
-</button>
-</div>
+<body><title>Quality Standards â€” Rithwik Industries</title>
+<meta name="description" content="Our stringent quality assurance processes and international certifications that define Rithwik Industries.">
+</head><header id="site-header" class="glass">
+  <div class="inner">
+    <a href="index.html" class="logo">
+      <img src="../rithwik_logo.webp" alt="Rithwik Logo">
+      <span class="logo-name">Rithwik</span>
+    </a>
+    <nav id="desktop-nav">
+      <a href="index.html" data-page="index">Superfoods</a>
+      <a href="millets.html" data-page="millets">Millets</a>
+      <a href="products.html" data-page="products">Bird Feeds</a>
+      <a href="about.html" data-page="about">Our Heritage</a>
+      <a href="quality.html" data-page="quality">Quality</a>
+      <a href="wholesale.html" class="btn btn-gold btn-sm" data-page="wholesale">Get a Quote</a>
+    </nav>
+    <button id="menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('open')">
+      <span class="ms" style="font-size:28px">menu</span>
+    </button>
+  </div>
 </header>
-<main class="flex-grow pt-[80px]">
-<!-- Hero Section -->
-<section class="px-margin-mobile md:px-margin-desktop py-16 md:py-24 max-w-7xl mx-auto">
-<div class="text-center mb-12">
-<h1 class="font-display-lg text-display-lg text-primary mb-6">The Standard of Purity</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Every grain is tested against the world's most rigorous benchmarks to ensure uncompromised quality.</p>
-</div>
-<div class="relative w-full max-w-4xl mx-auto">
-<div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden soft-shadow relative">
-<img alt="A laboratory setting where a scientist in a green coat and gloves is meticulously examining grains of millet in a petri dish using tweezers, with a card reading 'Rithwik Earth &amp; Ethos' next to it, against a backdrop of microscopes and bright natural light pouring through a window, conveying modern scientific precision and organic purity." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxtYQtsigZiww7VL6t2sqhLCOayzZ0VLk6ocWry4c5GCD3pCUZlMQQ6BZAyf1Phc7r0OopvstLLbw_4z_NVPBG6yfpcm0Mrd4mmqVlCnNwCgD6ZExOCqlH-0qlV6GdTF38AsdFXW7AoUmBlObOmVIg9rX2Mgu6i6xqCRfKDZfEQoPJP94e-Y63UJcgnWNtiUqhYqJjhGsjWuK443NM4Pue2FFtLHr_tdsG2V9euanPFNji0E6dFyrrZLtEaMNmx1GD7ffc1NWW2u0">
-</div>
-<!-- Certification Badges -->
-<div class="absolute -left-6 top-1/4 transform -translate-y-1/2 flex flex-col gap-6">
-<div class="bg-surface rounded-full p-4 flex items-center justify-center soft-shadow border border-secondary/10 w-20 h-20 group hover:scale-105 transition-transform">
-<span class="material-symbols-outlined text-primary text-3xl group-hover:text-secondary transition-colors">verified</span>
-<span class="sr-only">ISO Certified</span>
-</div>
-<div class="bg-surface rounded-full p-4 flex items-center justify-center soft-shadow border border-secondary/10 w-20 h-20 group hover:scale-105 transition-transform ml-8">
-<span class="material-symbols-outlined text-primary text-3xl group-hover:text-secondary transition-colors">assignment_turned_in</span>
-<span class="sr-only">HACCP Compliant</span>
-</div>
-</div>
-<div class="absolute -right-6 bottom-1/4 transform translate-y-1/2">
-<div class="bg-surface rounded-full p-4 flex items-center justify-center soft-shadow border border-secondary/10 w-20 h-20 group hover:scale-105 transition-transform">
-<span class="material-symbols-outlined text-primary text-3xl group-hover:text-secondary transition-colors">eco</span>
-<span class="sr-only">Certified Organic</span>
-</div>
-</div>
-</div>
+<div id="mobile-menu">
+  <button class="close-btn ms" onclick="document.getElementById('mobile-menu').classList.remove('open')">close</button>
+  <a href="index.html" onclick="this.closest('#mobile-menu').classList.remove('open')">Superfoods</a>
+  <a href="millets.html" onclick="this.closest('#mobile-menu').classList.remove('open')">Millets</a>
+  <a href="products.html" onclick="this.closest('#mobile-menu').classList.remove('open')">Bird Feeds</a>
+  <a href="about.html" onclick="this.closest('#mobile-menu').classList.remove('open')">Our Heritage</a>
+  <a href="quality.html" onclick="this.closest('#mobile-menu').classList.remove('open')">Quality</a>
+  <a href="wholesale.html" style="color:#e9c176" onclick="this.closest('#mobile-menu').classList.remove('open')">Get a Quote</a>
+</div><section class="page-hero">
+  <div class="container">
+    <div class="reveal"><span class="tag tag-light">Quality Assurance</span></div>
+    <div class="accent-line reveal" style="background:linear-gradient(90deg,#e9c176,#fed488)"></div>
+    <h1 class="reveal" style="font-size:clamp(40px,5vw,68px);color:#c8ebd0;line-height:1.15;margin-bottom:20px">The Standard<br><em style="color:#e9c176">of Purity</em></h1>
+    <p class="reveal" style="font-size:17px;color:rgba(200,235,208,.7);max-width:520px;line-height:1.75">Our commitment to quality is embedded in every stage â€” from seed selection to final export â€” with internationally certified processes guaranteeing absolute purity.</p>
+  </div>
 </section>
-<!-- Quality Metrics Bento Grid -->
-<section class="px-margin-mobile md:px-margin-desktop py-16 bg-surface-container-low">
-<div class="max-w-7xl mx-auto">
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-12 text-center md:text-left">Our Quality Benchmarks</h2>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-bento-gap">
-<!-- Card 1: Spans 7 cols -->
-<div class="col-span-1 md:col-span-7 glass-card rounded-xl p-8 flex flex-col justify-center">
-<div class="mb-4 inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary">
-<span class="material-symbols-outlined" data-weight="fill">filter_alt</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">99.9% Purity Level</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Multistage cleaning and sorting processes guarantee absolute grain integrity, removing impurities while preserving the natural wholesome goodness.</p>
-</div>
-<!-- Card 2: Spans 5 cols -->
-<div class="col-span-1 md:col-span-5 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-center relative overflow-hidden">
-<div class="absolute top-0 right-0 opacity-10 transform translate-x-1/3 -translate-y-1/3">
-<span class="material-symbols-outlined text-[12rem]">science</span>
-</div>
-<div class="relative z-10">
-<h3 class="font-headline-md text-headline-md mb-4">Scientific Formulation</h3>
-<p class="font-body-md text-body-md text-on-primary/80">Lab-tested nutrient profiles for consistent health benefits across every batch. We measure what matters.</p>
-</div>
-</div>
-<!-- Card 3: Spans 5 cols -->
-<div class="col-span-1 md:col-span-5 glass-card rounded-xl p-8 flex flex-col justify-center">
-<div class="mb-4 inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 text-secondary">
-<span class="material-symbols-outlined" data-weight="fill">security</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Zero Contaminants</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Strict moisture control and microbial testing to ensure 100% safe consumption. Purely natural.</p>
-</div>
-<!-- Card 4: Spans 7 cols -->
-<div class="col-span-1 md:col-span-7 bg-surface rounded-xl overflow-hidden soft-shadow flex flex-col md:flex-row">
-<div class="w-full md:w-1/2 h-64 md:h-auto" data-alt="A lush, sun-drenched field in Kurnool, featuring golden millet stalks ready for harvest under a clear blue sky, portraying agricultural richness and heritage sourcing in a bright, modern photographic style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB10QMTHtKiWuzD6CtyZA3zm1PjspEYbFNo0HQ2EN9AkK4XwRMyn-zZANijDXLdDtOpz8Xv6JfkRvCSzt51cqZnnhwl1XCrNWi_W49Eo59HSwCNEm5wvuE802uSZ1KoasZnazPiPLufi_qo26e60hlhgD0uZObo6ZTAJdg74cLUNm0gSMg3enOxB49HbdxGTl-Vw2klrkChNzihq8kWwm2rAsRcxzlWB_o0EKaHKk0FlSN0k5t5F8ljIByhtFZoqLQrB4lyPdq_03E')"></div>
-<div class="w-full md:w-1/2 p-8 flex flex-col justify-center bg-surface">
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Heritage Sourcing</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Directly sourced from Kurnool's nutrient-rich soils with full farm-to-table traceability. Honoring our roots.</p>
-</div>
-</div>
-</div>
-</div>
+<section class="section">
+  <div class="container">
+    <div class="reveal" style="text-align:center;margin-bottom:64px">
+      <span class="tag">Certifications</span>
+      <h2 style="font-size:44px;color:#163422;margin:20px 0 16px">Our Certifications &amp; Standards</h2>
+      <p style="font-size:17px;color:#424843;max-width:560px;margin:0 auto;line-height:1.75">Dedicated to quality control, evident through certifications that reflect our commitment to international food safety regulations.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:80px">
+      <div class="card reveal" style="padding:40px;text-align:center">
+        <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#775a19,#5d4214);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 8px 20px rgba(119,90,25,.3)">
+          <span style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#fff">BRC</span>
+        </div>
+        <h4 style="font-size:20px;color:#163422;margin-bottom:10px">BRC Certified</h4>
+        <p style="font-size:14px;color:#424843;line-height:1.65">British Retail Consortium certification â€” a globally recognized food safety standard ensuring highest quality management.</p>
+      </div>
+      <div class="card reveal" style="padding:40px;text-align:center">
+        <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#775a19,#5d4214);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 8px 20px rgba(119,90,25,.3)">
+          <span style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:#fff">USFDA</span>
+        </div>
+        <h4 style="font-size:20px;color:#163422;margin-bottom:10px">USFDA Registered</h4>
+        <p style="font-size:14px;color:#424843;line-height:1.65">Registered with the U.S. Food &amp; Drug Administration, allowing direct exports to American markets.</p>
+      </div>
+      <div class="card reveal" style="padding:40px;text-align:center">
+        <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#163422,#2d4b37);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 8px 20px rgba(22,52,34,.3)">
+          <span class="ms" style="font-size:36px;color:#c8ebd0">eco</span>
+        </div>
+        <h4 style="font-size:20px;color:#163422;margin-bottom:10px">Organic Certified</h4>
+        <p style="font-size:14px;color:#424843;line-height:1.65">Certified organic processing ensuring no harmful chemicals or additives are used at any stage.</p>
+      </div>
+      <div class="card reveal" style="padding:40px;text-align:center">
+        <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#163422,#2d4b37);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 8px 20px rgba(22,52,34,.3)">
+          <span class="ms" style="font-size:36px;color:#c8ebd0">workspace_premium</span>
+        </div>
+        <h4 style="font-size:20px;color:#163422;margin-bottom:10px">Star Export House</h4>
+        <p style="font-size:14px;color:#424843;line-height:1.65">Government recognized Star Export House status â€” the highest export recognition in India's DGFT framework.</p>
+      </div>
+      <div class="card reveal" style="padding:40px;text-align:center">
+        <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#775a19,#5d4214);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 8px 20px rgba(119,90,25,.3)">
+          <span style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:#fff">FSSAI</span>
+        </div>
+        <h4 style="font-size:20px;color:#163422;margin-bottom:10px">FSSAI Licensed</h4>
+        <p style="font-size:14px;color:#424843;line-height:1.65">Licensed by the Food Safety and Standards Authority of India, ensuring domestic and export food safety compliance.</p>
+      </div>
+      <div class="card reveal" style="padding:40px;text-align:center">
+        <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#163422,#2d4b37);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 8px 20px rgba(22,52,34,.3)">
+          <span class="ms" style="font-size:36px;color:#c8ebd0">diamond</span>
+        </div>
+        <h4 style="font-size:20px;color:#163422;margin-bottom:10px">ISO Standards</h4>
+        <p style="font-size:14px;color:#424843;line-height:1.65">ISO-aligned quality management systems ensuring consistent processes across all production stages.</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center">
+      <div class="reveal" style="position:relative;height:480px;border-radius:24px;overflow:hidden;box-shadow:0 40px 80px -20px rgba(22,52,34,.2)">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwmEteuyo5gdxv-KCLfDVoMysAGr5oRAMO4qYNFSQZhOGy3Zb8rYw_Uoj3Vr29kUNn-RasGR1iQLAs07RTgDgNEog93bBpCp7sagWn6IjsMThCYqPGXXZd4_Amq-zwULLdZCyNobTmpxMnQwG9wYFx7WRB01H7FdKL3w1eT7Sh0pwzH7ng_9zvZxJHm2CtbkVvq7yDr7UjVijkiitHqEikp3GZVMjvgV8Gu82H2m8YnXRKXeKR19AeBYX0mf-qiAwS-S0Apmt-JHA" alt="Quality Process" style="width:100%;height:100%;object-fit:cover">
+      </div>
+      <div class="reveal">
+        <span class="tag">Our Process</span>
+        <h2 style="font-size:40px;color:#163422;margin:20px 0 20px;line-height:1.2">Multi-Stage Quality Control</h2>
+        <div style="display:flex;flex-direction:column;gap:24px">
+          <div style="display:flex;gap:16px;align-items:flex-start">
+            <div style="width:36px;height:36px;border-radius:50%;background:#163422;color:#c8ebd0;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0">1</div>
+            <div><h4 style="font-size:16px;font-weight:600;color:#163422;margin-bottom:6px">Raw Material Inspection</h4><p style="font-size:14px;color:#424843;line-height:1.65">Every incoming batch is visually and scientifically inspected for moisture, impurities and foreign matter.</p></div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:flex-start">
+            <div style="width:36px;height:36px;border-radius:50%;background:#163422;color:#c8ebd0;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0">2</div>
+            <div><h4 style="font-size:16px;font-weight:600;color:#163422;margin-bottom:6px">Advanced Cleaning &amp; Sorting</h4><p style="font-size:14px;color:#424843;line-height:1.65">Multi-stage optical and gravity separation removes all impurities to achieve 99.99% purity levels.</p></div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:flex-start">
+            <div style="width:36px;height:36px;border-radius:50%;background:#163422;color:#c8ebd0;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0">3</div>
+            <div><h4 style="font-size:16px;font-weight:600;color:#163422;margin-bottom:6px">Lab Testing</h4><p style="font-size:14px;color:#424843;line-height:1.65">In-house and third-party lab testing for heavy metals, pesticides and microbiological contaminants.</p></div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:flex-start">
+            <div style="width:36px;height:36px;border-radius:50%;background:#163422;color:#c8ebd0;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0">4</div>
+            <div><h4 style="font-size:16px;font-weight:600;color:#163422;margin-bottom:6px">Export Packaging</h4><p style="font-size:14px;color:#424843;line-height:1.65">Certified export-grade packaging maintaining product integrity and shelf life across global transit.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Commitment Section -->
-<section class="px-margin-mobile md:px-margin-desktop py-24 text-center max-w-4xl mx-auto">
-<span class="material-symbols-outlined text-secondary text-5xl mb-6 opacity-80" data-weight="fill">spa</span>
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Earth &amp; Ethos</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                Our commitment to excellence goes beyond basic standards. We bridge traditional agricultural wisdom with modern scientific precision. Every seed that bears the Rithwik name is a testament to our profound respect for nature and our unwavering dedication to providing nurturing purity for you.
-            </p>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full px-margin-mobile md:px-margin-desktop py-20 grid grid-cols-1 md:grid-cols-12 gap-12 bg-primary text-on-primary border-t-4 border-secondary">
-<div class="md:col-span-4 flex flex-col gap-6">
-<h2 class="font-headline-lg text-4xl text-primary-fixed mb-2 flex items-center gap-3"><img src="../rithwik_logo.webp" alt="Rithwik Logo" class="w-10 h-10 rounded-full"> Rithwik</h2>
-<p class="font-body-md text-body-md text-on-primary-container max-w-sm leading-relaxed">
-            Nature's Grain, Nurtured for You. Premium organic superfoods and scientifically formulated bird feeds from the heart of Andhra Pradesh.
-        </p>
-<div class="mt-4 w-full max-w-sm rounded-xl overflow-hidden shadow-sm opacity-90 hover:opacity-100 transition-opacity bg-primary-container/20">
-  <iframe src="https://maps.google.com/maps?q=Nandyal%20Checkpost,%20Kurnool,%20Andhra%20Pradesh&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-</div>
-</div>
-<div class="md:col-span-2 md:col-start-7 flex flex-col gap-5">
-<h3 class="font-label-md text-label-md text-secondary-container tracking-[0.15em] uppercase mb-4">Company</h3>
-<a class="font-body-md text-body-md text-primary-fixed/90 hover:text-secondary-container hover:translate-x-1 transition-all duration-300 inline-block" href="about.html">About Kurnool Heritage</a>
-<a class="font-body-md text-body-md text-primary-fixed/90 hover:text-secondary-container hover:translate-x-1 transition-all duration-300 inline-block" href="quality.html">Processing Standards</a>
-<a class="font-body-md text-body-md text-primary-fixed/90 hover:text-secondary-container hover:translate-x-1 transition-all duration-300 inline-block" href="wholesale.html">Contact Us</a>
-</div>
-<div class="md:col-span-2 flex flex-col gap-5">
-<h3 class="font-label-md text-label-md text-secondary-container tracking-[0.15em] uppercase mb-4">Products</h3>
-<a class="font-body-md text-body-md text-primary-fixed/90 hover:text-secondary-container hover:translate-x-1 transition-all duration-300 inline-block" href="millets.html">Millet Varieties</a>
-<a class="font-body-md text-body-md text-primary-fixed/90 hover:text-secondary-container hover:translate-x-1 transition-all duration-300 inline-block" href="products.html">Bird Feed Blends</a>
-<a class="font-body-md text-body-md text-primary-fixed/90 hover:text-secondary-container hover:translate-x-1 transition-all duration-300 inline-block" href="#">Shipping Policy</a>
-</div>
-<div class="md:col-span-2 flex flex-col gap-5">
-<h3 class="font-label-md text-label-md text-secondary-container tracking-[0.15em] uppercase mb-4">Contact</h3>
-<p class="font-body-md text-body-md text-primary-fixed/90 flex items-center gap-3"><span class="material-symbols-outlined text-secondary-container">mail</span> rithwikindustries@gmail.com</p>
-<p class="font-body-md text-body-md text-primary-fixed/90 flex items-center gap-3"><span class="material-symbols-outlined text-secondary-container">call</span> 8828282823</p>
-<p class="font-body-md text-body-md text-primary-fixed/90 flex items-start gap-3 mt-2"><span class="material-symbols-outlined text-secondary-container">location_on</span> 87/1404, Near Nandyal Checkpost, Kurnool</p>
-</div>
-<div class="col-span-1 md:col-span-12 flex flex-col md:flex-row justify-between items-center w-full mt-10 pt-6 border-t border-primary-fixed/20 gap-4">
-    <p class="font-label-md text-label-md text-primary-fixed/60">
-        &copy; 2026 Rithwik Industries. Natural Purity, Nurtured for You.
-    </p>
-    <p class="font-label-md text-label-md text-primary-fixed/60 flex items-center gap-2">
-        A <a href="https://quantumpixel.duckdns.org" target="_blank" class="text-secondary-container hover:text-secondary font-bold underline transition-colors">QuantumPixel</a> product
-    </p>
-</div>
+<section class="reveal" style="background:linear-gradient(135deg,#163422,#2d4b37);padding:96px 0;text-align:center">
+  <div class="container">
+    <h2 style="font-size:48px;color:#c8ebd0;margin-bottom:16px;font-style:italic">Certifications on Request</h2>
+    <p style="font-size:17px;color:rgba(200,235,208,.7);margin:0 auto 40px;max-width:480px;line-height:1.75">We provide full certification documentation and lab reports with every wholesale enquiry.</p>
+    <a href="wholesale.html" class="btn btn-gold">Request Documentation <span class="ms">description</span></a>
+  </div>
+</section><footer class="site-footer">
+  <div class="inner">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">
+          <img src="../rithwik_logo.webp" alt="Rithwik Logo">
+          <span>Rithwik</span>
+        </a>
+        <p class="footer-desc">Nature's Grain, Nurtured for You. Premium organic superfoods and bird feeds from the heart of Andhra Pradesh, India.</p>
+        <div class="footer-map">
+          <iframe src="https://maps.google.com/maps?q=Nandyal+Checkpost,+Kurnool,+Andhra+Pradesh&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="180" style="border:0;display:block" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Company</p>
+        <div class="footer-links">
+          <a href="about.html">Our Heritage</a>
+          <a href="quality.html">Quality Standards</a>
+          <a href="wholesale.html">Wholesale</a>
+          <a href="../index.html">Classic Site</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Products</p>
+        <div class="footer-links">
+          <a href="millets.html">Premium Millets</a>
+          <a href="products.html">Bird Feed Blends</a>
+          <a href="index.html">Organic Seeds</a>
+          <a href="wholesale.html">Bulk Orders</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <div class="footer-contact-item"><span class="ms" style="color:#e9c176;font-size:20px;flex-shrink:0">mail</span><a href="mailto:rithwikindustries@gmail.com">rithwikindustries@gmail.com</a></div>
+        <div class="footer-contact-item"><span class="ms" style="color:#e9c176;font-size:20px;flex-shrink:0">call</span><a href="tel:+918309782770">+91 8309782770</a></div>
+        <div class="footer-contact-item"><span class="ms" style="color:#e9c176;font-size:20px;flex-shrink:0;margin-top:2px">location_on</span><span>87/1404, Near Nandyal Checkpost, Kurnool, AP 518002</span></div>
+        <a href="wholesale.html" class="btn btn-gold btn-sm" style="margin-top:12px">Send Enquiry</a>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <p>&copy; 2026 Rithwik Industries. All Rights Reserved.</p>
+      <p>A <a href="https://quantumpixel.duckdns.org" target="_blank" style="color:#e9c176;font-weight:600" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">QuantumPixel</a> product</p>
+    </div>
+  </div>
 </footer>
+<div id="toast"><span class="ms">check_circle</span><span id="toast-msg">Done!</span></div>
+<script>
+// Reveal on scroll
+const rio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');rio.unobserve(e.target)}}),{threshold:.08,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>rio.observe(el));
+// Header scroll
+window.addEventListener('scroll',()=>document.getElementById('site-header').classList.toggle('scrolled',scrollY>40),{passive:true});
+// Active nav link
+const pg=location.pathname.split('/').pop().replace('.html','')||'index';
+document.querySelectorAll('[data-page]').forEach(a=>{if(a.dataset.page===pg)a.classList.add('active')});
+// Toast
+function showToast(msg,icon='check_circle'){
+  const t=document.getElementById('toast');
+  document.getElementById('toast-msg').textContent=msg;
+  t.querySelector('.ms').textContent=icon;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),3200);
+}
+// Mobile menu responsive
+const mq=matchMedia('(max-width:900px)');
+const applyMQ=()=>{document.getElementById('menu-btn').style.display=mq.matches?'block':'none'};
+applyMQ();mq.addListener(applyMQ);
+</script>
 </body></html>
-
-
-
-
-
