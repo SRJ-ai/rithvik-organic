@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
     
     <!-- Preload Critical Assets -->
-    <link rel="preload" href="./rithwik_logo.png" as="image">
-    <link rel="preload" href="./hero_bg.png" as="image">
+    <link rel="preload" href="./rithwik_logo.webp" as="image">
+    <link rel="preload" href="./hero_bg.webp" as="image">
   </head>
   <body>
     <!-- Custom Fluid Cursor -->
@@ -21,7 +21,7 @@
     <!-- Cinematic Preloader -->
     <div id="preloader">
       <div class="preloader-content">
-        <img src="./rithwik_logo.png" alt="Rithwik Industries Loading" class="preloader-logo">
+        <img src="./rithwik_logo.webp" alt="Rithwik Industries Loading" class="preloader-logo">
       </div>
     </div>
     
@@ -32,7 +32,7 @@
     <nav class="navbar glass-effect">
       <div class="container nav-content">
         <a href="#" class="logo">
-          <img src="./rithwik_logo.png" alt="Rithwik Industries Logo" class="nav-logo-img">
+          <img src="./rithwik_logo.webp" alt="Rithwik Industries Logo" class="nav-logo-img">
           <span>Rithwik Industries</span>
         </a>
         <ul class="nav-links">
@@ -55,7 +55,7 @@
     <!-- Hero Section -->
     <header class="hero" id="home">
       <!-- Cinematic Video Background (Drop hero_video.mp4 in public folder) -->
-      <video class="hero-bg-video" autoplay loop muted playsinline poster="./hero_bg.png">
+      <video class="hero-bg-video" autoplay loop muted playsinline poster="./hero_bg.webp">
         <source src="./hero_video.mp4" type="video/mp4">
       </video>
       <div class="hero-particles" id="particles"></div>
@@ -98,7 +98,7 @@
         <div class="story-visual-column">
           <div class="sticky-visual glass-effect-heavy">
             <!-- This image changes via JS based on scroll -->
-            <img src="./hero_bg.png" alt="Farm to Export Visual" id="story-image" loading="lazy">
+            <img src="./hero_bg.webp" alt="Farm to Export Visual" id="story-image" loading="lazy">
             <div class="visual-overlay"></div>
           </div>
         </div>
@@ -128,7 +128,7 @@
     <section class="section global-reach" id="global-reach">
       <div class="container fade-in-scroll">
         <div class="map-container custom-map-container" style="position: relative; width: 100%; max-width: 1200px; margin: 0 auto; overflow: hidden; border-radius: 20px; aspect-ratio: 16/9; background: #0a0a0a;">
-          <img src="./world_map_bg.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.8; filter: contrast(1.1) brightness(0.8); z-index: 1;" loading="lazy" alt="World Map Background">
+          <img src="./world_map_bg.webp" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.8; filter: contrast(1.1) brightness(0.8); z-index: 1;" loading="lazy" alt="World Map Background">
           <svg viewBox="0 0 1600 900" class="gsap-world-map" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; z-index: 2;">
             <!-- Trade Routes (will be drawn by GSAP) -->
             <!-- Kurnool (India) to Japan -->
@@ -272,7 +272,7 @@
         <p class="section-subtitle text-center">We offer a diverse range of products, including millets, superseeds, super foods, spices, and nuts.</p>
         
         <div class="product-category">
-          <div class="category-image" style="padding: 0; background: none;"><img src="./millets.png" style="width: 100%; height: 100%; object-fit: cover;" fetchpriority="low" decoding="async" alt="Premium Millets"></div>
+          <div class="category-image" style="padding: 0; background: none;"><img src="./millets.webp" style="width: 100%; height: 100%; object-fit: cover;" fetchpriority="low" decoding="async" alt="Premium Millets"></div>
           <div class="category-content">
             <h3>Premium Millets</h3>
             <p class="health-benefits">Millets are rich in fiber, antioxidants, and essential nutrients, making them a great choice for gluten-free diets.</p>
@@ -289,7 +289,7 @@
         </div>
 
         <div class="product-category" style="margin-top: 80px;">
-          <div class="category-image" style="padding: 0; background: none;"><img src="./seeds.png" style="width: 100%; height: 100%; object-fit: cover;" fetchpriority="low" decoding="async" alt="Seeds and Superfoods"></div>
+          <div class="category-image" style="padding: 0; background: none;"><img src="./seeds.webp" style="width: 100%; height: 100%; object-fit: cover;" fetchpriority="low" decoding="async" alt="Seeds and Superfoods"></div>
           <div class="category-content">
             <h3>Seeds & Super Foods</h3>
             <p class="health-benefits">Enhance your daily nutrition with our premium selection of super seeds, packed with omega-3s, protein, and essential minerals.</p>
@@ -450,6 +450,7 @@
         </div>
         <div class="footer-bottom">
           <p>&copy; 2026 Rithwik Industries. All Rights Reserved.</p>
+          <p style="margin-top: 5px; font-size: 0.9em; opacity: 0.8;">A <a href="http://quantumpixel.duckdns.org" target="_blank" style="color: var(--color-secondary); text-decoration: none; font-weight: bold;">QuantumPixel</a> Product</p>
         </div>
       </div>
     </footer>
