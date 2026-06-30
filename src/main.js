@@ -49,33 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize WebGL Particles
   initWebGLParticles();
 
-  // Custom Fluid Cursor
-  const cursor = document.querySelector('.custom-cursor');
-  if (cursor) {
-    let mouseX = window.innerWidth / 2, mouseY = window.innerHeight / 2;
-    let cursorX = mouseX, cursorY = mouseY;
-    
-    const xSet = gsap.quickSetter(cursor, "x", "px");
-    const ySet = gsap.quickSetter(cursor, "y", "px");
-
-    window.addEventListener('mousemove', e => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-    });
-
-    gsap.ticker.add(() => {
-      cursorX += (mouseX - cursorX) * 0.15;
-      cursorY += (mouseY - cursorY) * 0.15;
-      xSet(cursorX);
-      ySet(cursorY);
-    });
-
-    const hoverElements = document.querySelectorAll('a, button, input, textarea, select, .map-node-gsap, .btn');
-    hoverElements.forEach(el => {
-      el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
-      el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
-    });
-  }
 
   // Section Transition Engine
   const curtain = document.querySelector('.transition-curtain');
