@@ -1,4 +1,4 @@
-
+﻿
 # Shared components
 $HEAD = @'
 <!DOCTYPE html>
@@ -63,8 +63,8 @@ $HEAD = @'
     #site-header .logo img{width:40px;height:40px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(22,52,34,.2)}
     #site-header .logo-name{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#163422}
     #desktop-nav{display:flex;align-items:center;gap:32px}
-    #desktop-nav a{font-size:14px;font-weight:500;color:#424843;transition:color .2s;letter-spacing:.02em}
-    #desktop-nav a:hover,#desktop-nav a.active{color:#775a19}
+    #desktop-nav a:not(.btn){font-size:14px;font-weight:500;color:#424843;transition:color .2s;letter-spacing:.02em}
+    #desktop-nav a:not(.btn):hover, #desktop-nav a:not(.btn).active {color:#775a19}
     #desktop-nav a.active{border-bottom:2px solid #775a19;padding-bottom:2px}
     /* Mobile menu */
     #menu-btn{display:none;background:none;border:none;cursor:pointer;color:#163422;padding:4px}
@@ -916,3 +916,4 @@ Set-Content -Path "./products.html" -Value $PRODUCTS -Encoding UTF8
 Remove-Item -Path "./enquiry-success.html" -Force -ErrorAction SilentlyContinue
 
 Write-Host "ALL PAGES WRITTEN SUCCESSFULLY"
+
